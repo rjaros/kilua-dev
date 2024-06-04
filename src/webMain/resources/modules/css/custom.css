@@ -1,0 +1,18 @@
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Manrope', sans-serif;
+}
+
+.mobile-menu {
+    padding: 2rem;
+}
+
+.mobile-menu ul {
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-menu li {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
