@@ -100,7 +100,19 @@ fun IComponent.learning() {
                     +" specification, supporting CRUD operations, authentication, routing, pagination, SSR and more."
                 }
                 li {
-                    +"This website is also a Kilua application, built with Tailwindcss, Ktor SSR and published to Render."
+                    +"This website is also a Kilua application. It's designed with Tailwindcss, published by Ktor server with SSR, running as GraalVM native image in a Docker container published to GitHub packages and hosted on "
+                    link(
+                        "https://render.com/",
+                        "Render",
+                        className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
+                    )
+                    +" with a free plan. The full source code, including GitHub Actions workflow is available at "
+                    link(
+                        "https://github.com/rjaros/kilua-dev",
+                        "https://github.com/rjaros/kilua-dev",
+                        className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
+                    )
+                    +"."
                 }
             }
         }
