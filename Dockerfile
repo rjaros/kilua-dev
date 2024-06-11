@@ -30,6 +30,7 @@ RUN native-image --no-fallback \
     -H:IncludeResources="assets/.*html$" \
     -H:IncludeResources="assets/.*ttf$" \
     -H:IncludeResources="assets/.*woff2$" \
+    -H:IncludeResources="assets/.*txt$" \
     -cp kilua-dev.jar -H:Class=website.MainKt -o kilua-dev
 
 FROM node:22
