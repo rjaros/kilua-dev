@@ -74,13 +74,19 @@ fun IComponent.footer() {
         }
         ul("flex justify-center mt-10 space-x-8 mb-10") {
             li {
-                link("https://github.com/rjaros/kilua", icon = "fab fa-github fa-2x")
+                link("https://github.com/rjaros/kilua", icon = "fab fa-github fa-2x") {
+                    ariaLabel("GitHub")
+                }
             }
             li {
-                link("https://kotlinlang.slack.com/?redir=%2Fmessages%2FC06UAH52PA7", icon = "fab fa-slack fa-2x")
+                link("https://kotlinlang.slack.com/?redir=%2Fmessages%2FC06UAH52PA7", icon = "fab fa-slack fa-2x") {
+                    ariaLabel("Slack")
+                }
             }
             li {
-                link("https://dev.to/t/kilua/latest", icon = "fab fa-dev fa-2x")
+                link("https://dev.to/t/kilua/latest", icon = "fab fa-dev fa-2x") {
+                    ariaLabel("Dev.to")
+                }
             }
         }
     }

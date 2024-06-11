@@ -11,6 +11,13 @@ if (config.devServer) {
     config.devtool = undefined;
     config.resolve.alias = {
         "zzz-kilua-assets/style.css": false,
+        "zzz-kilua-assets/bootstrap.css": false,
+        "zzz-kilua-assets/splitjs.css": false,
+        "zzz-kilua-assets/tabulator.css": false,
+        "zzz-kilua-assets/tempus-dominus.css": false,
+        "zzz-kilua-assets/toastify.css": false,
+        "zzz-kilua-assets/tom-select.css": false,
+        "zzz-kilua-assets/trix.css": false,
         "bootstrap/dist/css/bootstrap.min.css": false,
         "@eonasdan/tempus-dominus/dist/css/tempus-dominus.min.css": false,
         "tabulator-tables/dist/css/tabulator.min.css": false,
