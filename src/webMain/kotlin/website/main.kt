@@ -25,13 +25,13 @@ package website
 import dev.kilua.Application
 import dev.kilua.CssRegister
 import dev.kilua.FontAwesomeModule
+import dev.kilua.JsModule
 import dev.kilua.TailwindcssModule
 import dev.kilua.compose.root
 import dev.kilua.ssr.SsrRouter
 import dev.kilua.startApplication
 import dev.kilua.theme.ThemeManager
-import dev.kilua.utils.JsModule
-import dev.kilua.utils.useModule
+import dev.kilua.useModule
 import website.components.features
 import website.components.footer
 import website.components.header
