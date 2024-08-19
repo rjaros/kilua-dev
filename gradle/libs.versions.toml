@@ -1,10 +1,10 @@
 [versions]
-kilua = "0.0.9"
-kilua-rpc = "0.0.15"
-kotlin = "2.0.0"
-compose = "1.6.11"
+kilua = "0.0.10"
+kilua-rpc = "0.0.16"
+kotlin = "2.0.20-RC2"
+compose = "1.7.0-alpha02"
 ktor = "2.3.12"
-logback = "1.5.6"
+logback = "1.5.7"
 
 [libraries]
 kilua = { module = "dev.kilua:kilua", version.ref = "kilua" }
