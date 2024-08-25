@@ -1,8 +1,8 @@
 [versions]
-kilua = "0.0.10"
-kilua-rpc = "0.0.16"
-kotlin = "2.0.20-RC2"
-compose = "1.7.0-alpha02"
+kilua = "0.0.11"
+kilua-rpc = "0.0.17"
+kotlin = "2.0.20"
+compose = "1.7.0-alpha03"
 ktor = "2.3.12"
 logback = "1.5.7"
 
