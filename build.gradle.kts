@@ -9,7 +9,6 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kilua.rpc)
     alias(libs.plugins.kilua)
-    alias(libs.plugins.ktor)
 }
 
 val mainClassName = "website.MainKt"
