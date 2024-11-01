@@ -1,6 +1,6 @@
 [versions]
-kilua = "0.0.14"
-kilua-rpc = "0.0.20"
+kilua = "0.0.15"
+kilua-rpc = "0.0.21"
 kotlin = "2.0.21"
 compose = "1.7.0"
 ktor = "2.3.12"
