@@ -55,6 +55,15 @@ fun IComponent.learning() {
             }
             ul("list-disc list-outside ml-4") {
                 li {
+                    +"The official guide is published at "
+                    link(
+                        "https://kilua.gitbook.io/kilua-guide",
+                        "https://kilua.gitbook.io/kilua-guide",
+                        className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
+                    )
+                    +". It's still incomplete but already contains a lot of useful information."
+                }
+                li {
                     +"Current API documentation is published at "
                     link(
                         "https://rjaros.github.io/kilua/api/",
@@ -100,13 +109,20 @@ fun IComponent.learning() {
                     +" specification, supporting CRUD operations, authentication, routing, pagination, SSR and more."
                 }
                 li {
-                    +"This website is also a Kilua application. It's designed with Tailwindcss, published by Ktor server with SSR, running as GraalVM native image in a Docker container published to GitHub packages and hosted on "
+                    +"This website is also a Kilua application fully designed with Tailwindcss. The primary version is published as exported static site on GitHub Pages. "
+                    +"The secondary version is powered by a Ktor server with full SSR, running as GraalVM native image in a Docker container published to GitHub packages and hosted on "
                     link(
                         "https://render.com/",
                         "Render",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
                     )
-                    +" with a free plan. The full source code, including GitHub Actions workflow is available at "
+                    +" with a free plan. You can check this version at "
+                    link(
+                        "https://ssr.kilua.dev/",
+                        "https://ssr.kilua.dev/",
+                        className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
+                    )
+                    +" (it may require some time to activate). The full source code, including GitHub Actions workflow is available at "
                     link(
                         "https://github.com/rjaros/kilua-dev",
                         "https://github.com/rjaros/kilua-dev",
