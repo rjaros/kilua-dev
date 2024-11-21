@@ -33,7 +33,6 @@ import dev.kilua.html.p
 import dev.kilua.html.perc
 import dev.kilua.html.section
 import dev.kilua.html.span
-import dev.kilua.utils.isDom
 import website.KotlinPlayground
 
 @Composable
@@ -57,7 +56,7 @@ fun IComponent.hero() {
                         className = "bg-primary hover:bg-secondary text-white font-semibold px-4 py-2 rounded-full inline-flex items-center gap-x-2"
                     )
                     p {
-                        +"Current version: 0.0.16"
+                        +"Current version: 0.0.17"
                     }
                 }
             }
@@ -92,7 +91,7 @@ fun IComponent.hero() {
                                 }
                                 """.trimIndent()
                     LaunchedEffect(Unit) {
-                        if (isDom) {
+                        if (renderConfig.isDom) {
                             KotlinPlayground(".code-blocks-selector")
                         }
                     }
