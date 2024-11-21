@@ -1,4 +1,4 @@
 parameters:
- - "-config=./deploy/export.conf"
+ - "-config=./deploy/application.conf"
 pages:
  - "/"
