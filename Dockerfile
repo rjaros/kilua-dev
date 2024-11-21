@@ -23,6 +23,7 @@ RUN native-image --no-fallback \
     --initialize-at-build-time=org.slf4j.helpers \
     --initialize-at-build-time=org.xml.sax.helpers.AttributesImpl \
     --initialize-at-build-time=org.xml.sax.helpers.LocatorImpl \
+    --initialize-at-build-time=kotlinx.io \
     -H:+ReportExceptionStackTraces \
     -H:IncludeResources="ssr.zip" \
     -H:IncludeResources=".*/assets/.*" \
