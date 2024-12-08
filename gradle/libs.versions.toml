@@ -1,9 +1,9 @@
 [versions]
-kilua = "0.0.17"
-kilua-rpc = "0.0.23"
-kotlin = "2.1.0-RC2"
-compose = "1.7.1"
-ktor = "3.0.1"
+kilua = "0.0.18"
+kilua-rpc = "0.0.24"
+kotlin = "2.1.0"
+compose = "1.8.0-alpha01"
+ktor = "3.0.2"
 
 [libraries]
 kilua = { module = "dev.kilua:kilua", version.ref = "kilua" }
