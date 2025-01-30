@@ -1,0 +1,5 @@
+export:
+  server_parameters:
+   - "-config=./deploy/application.conf"
+  pages:
+   - "/"

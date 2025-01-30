@@ -1,4 +1,0 @@
-parameters:
- - "-config=./deploy/application.conf"
-pages:
- - "/"

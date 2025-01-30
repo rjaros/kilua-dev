@@ -100,7 +100,7 @@ fun IComponent.features() {
                     +"Deploy your application with full SSR for better SEO performance and user experience."
                 }
                 li {
-                    +"Export your application as a set of static HTML files for more affordable hosting solutions."
+                    +"Export your application as a set of static HTML files for more affordable hosting solutions.bg"
                 }
             }
         }

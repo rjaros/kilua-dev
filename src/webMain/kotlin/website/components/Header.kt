@@ -68,7 +68,7 @@ fun IComponent.header() {
                 }
             }
             div("flex md:hidden") {
-                button(className = "focus:outline-none") {
+                button(className = "focus:outline-hidden") {
                     id("hamburger")
                     svg(viewBox = "0 0 24 24", className = "w-6 h-6") {
                         fill("none")
