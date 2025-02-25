@@ -15,7 +15,7 @@ val mainClassName = "website.MainKt"
 
 @OptIn(ExperimentalWasmDsl::class)
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
     jvm {
         @OptIn(ExperimentalKotlinGradlePluginApi::class)
         compilerOptions {
