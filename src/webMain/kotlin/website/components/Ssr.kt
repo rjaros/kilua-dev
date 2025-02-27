@@ -69,7 +69,7 @@ fun IComponent.ssr() {
                     +"Serialization of the application state from the server to the client side."
                 }
                 li {
-                    +"Ready to use modules for Ktor, Spring Boot, Micronaut, Javalin, Jooby and Vert.x servers."
+                    +"Ready to use modules for Ktor, Spring Boot, Micronaut, Javalin, Jooby and Vert.x servers (Micronaut support is temporarily disabled)."
                 }
             }
         }

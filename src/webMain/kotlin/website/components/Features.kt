@@ -85,7 +85,7 @@ fun IComponent.features() {
                         "Kilua RPC",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
                     )
-                    +" library supporting Ktor, Spring Boot, Micronaut, Javalin, Jooby and Vert.x servers."
+                    +" library supporting Ktor, Spring Boot, Micronaut, Javalin, Jooby and Vert.x servers (Micronaut support is temporarily disabled)."
                 }
                 li {
                     +"Translate your application to other languages with "
