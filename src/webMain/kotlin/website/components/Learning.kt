@@ -23,26 +23,20 @@
 package website.components
 
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import dev.kilua.core.IComponent
 import dev.kilua.html.Outline
 import dev.kilua.html.OutlineStyle
+import dev.kilua.html.a
 import dev.kilua.html.br
-import dev.kilua.html.code
 import dev.kilua.html.div
 import dev.kilua.html.h2
 import dev.kilua.html.li
-import dev.kilua.html.link
-import dev.kilua.html.p
-import dev.kilua.html.perc
 import dev.kilua.html.section
-import dev.kilua.html.span
 import dev.kilua.html.ul
-import website.KotlinPlayground
 
 @Composable
 fun IComponent.learning() {
-    link {
+    a {
         id("learning")
         tabindex(-1)
         outline(Outline(style = OutlineStyle.None))
@@ -56,7 +50,7 @@ fun IComponent.learning() {
             ul("list-disc list-outside ml-4") {
                 li {
                     +"The official guide is published at "
-                    link(
+                    a(
                         "https://kilua.gitbook.io/kilua-guide",
                         "https://kilua.gitbook.io/kilua-guide",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
@@ -65,7 +59,7 @@ fun IComponent.learning() {
                 }
                 li {
                     +"Current API documentation is published at "
-                    link(
+                    a(
                         "https://rjaros.github.io/kilua/api/",
                         "https://rjaros.github.io/kilua/api/",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
@@ -74,7 +68,7 @@ fun IComponent.learning() {
                 }
                 li {
                     +"Different example applications can be found in the "
-                    link(
+                    a(
                         "https://github.com/rjaros/kilua/tree/main/examples",
                         "examples directory",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
@@ -86,7 +80,7 @@ fun IComponent.learning() {
                 }
                 li {
                     +"The "
-                    link(
+                    a(
                         "https://github.com/rjaros/kilua/tree/main/examples/fullstack-ktor-koin",
                         "fullstack example",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
@@ -95,13 +89,13 @@ fun IComponent.learning() {
                 }
                 li {
                     +"Be sure to check out the "
-                    link(
+                    a(
                         "https://github.com/rjaros/kilua/tree/main/examples/realworld",
                         "realworld example",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
                     )
                     +" - a fully fledged fullstack application based on the "
-                    link(
+                    a(
                         "https://realworld.io/",
                         "RealWorld project",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
@@ -111,19 +105,19 @@ fun IComponent.learning() {
                 li {
                     +"This website is also a Kilua application fully designed with Tailwindcss. The primary version is published as exported static site on GitHub Pages. "
                     +"The secondary version is powered by a Ktor server with full SSR, running as GraalVM native image in a Docker container published to GitHub packages and hosted on "
-                    link(
+                    a(
                         "https://render.com/",
                         "Render",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
                     )
                     +" with a free plan. You can check this version at "
-                    link(
+                    a(
                         "https://ssr.kilua.dev/",
                         "https://ssr.kilua.dev/",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
                     )
                     +" (it may require some time to activate). The full source code, including GitHub Actions workflow is available at "
-                    link(
+                    a(
                         "https://github.com/rjaros/kilua-dev",
                         "https://github.com/rjaros/kilua-dev",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"

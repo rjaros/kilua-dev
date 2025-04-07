@@ -30,12 +30,12 @@ import androidx.compose.runtime.setValue
 import dev.kilua.core.IComponent
 import dev.kilua.html.Outline
 import dev.kilua.html.OutlineStyle
+import dev.kilua.html.a
 import dev.kilua.html.button
 import dev.kilua.html.div
 import dev.kilua.html.header
 import dev.kilua.html.img
 import dev.kilua.html.li
-import dev.kilua.html.link
 import dev.kilua.html.nav
 import dev.kilua.html.ul
 import dev.kilua.svg.path
@@ -46,7 +46,7 @@ import dev.kilua.theme.themeSwitcher
 fun IComponent.header() {
     var mobileMenuVisible by remember { mutableStateOf(false) }
 
-    link {
+    a {
         id("home")
         tabindex(-1)
         outline(Outline(style = OutlineStyle.None))
@@ -54,7 +54,7 @@ fun IComponent.header() {
     header("text-lg bg-white dark:bg-gray-dark text-black dark:text-white sticky top-0 z-50 border-b-2 border-b-black dark:border-b-white") {
         div("container mx-auto flex justify-between items-center py-4") {
             div("flex items-center") {
-                link("#home") {
+                a("#home") {
                     img(
                         "assets/images/logo-color.png",
                         alt = "Logo",
@@ -87,18 +87,18 @@ fun IComponent.header() {
             nav("hidden md:flex md:flex-grow justify-center") {
                 ul("flex justify-center space-x-4") {
                     li {
-                        link("#features", "Features", className = "hover:text-secondary font-bold")
+                        a("#features", "Features", className = "hover:text-secondary font-bold")
                     }
                     li {
-                        link("#learning", "Learning", className = "hover:text-secondary font-bold")
+                        a("#learning", "Learning", className = "hover:text-secondary font-bold")
                     }
                     li {
-                        link("#ssr", "SSR", className = "hover:text-secondary font-bold")
+                        a("#ssr", "SSR", className = "hover:text-secondary font-bold")
                     }
                 }
             }
             div("hidden md:flex items-center space-x-4") {
-                link(
+                a(
                     "https://github.com/rjaros/kilua?tab=readme-ov-file#building-and-running-the-examples",
                     "Get started",
                     className = "hidden lg:block bg-primary hover:bg-secondary text-white font-semibold px-4 py-2 rounded-full inline-block"

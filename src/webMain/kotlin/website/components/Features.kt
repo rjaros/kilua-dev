@@ -26,17 +26,17 @@ import androidx.compose.runtime.Composable
 import dev.kilua.core.IComponent
 import dev.kilua.html.Outline
 import dev.kilua.html.OutlineStyle
+import dev.kilua.html.a
 import dev.kilua.html.br
 import dev.kilua.html.div
 import dev.kilua.html.h2
 import dev.kilua.html.li
-import dev.kilua.html.link
 import dev.kilua.html.section
 import dev.kilua.html.ul
 
 @Composable
 fun IComponent.features() {
-    link {
+    a {
         id("features")
         tabindex(-1)
         outline(Outline(style = OutlineStyle.None))
@@ -56,13 +56,13 @@ fun IComponent.features() {
                 }
                 li {
                     +"Easily style your application using "
-                    link(
+                    a(
                         "https://tailwindcss.com",
                         "Tailwindcss",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
                     )
                     +" or "
-                    link(
+                    a(
                         "https://getbootstrap.com",
                         "Bootstrap",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
@@ -80,7 +80,7 @@ fun IComponent.features() {
                 }
                 li {
                     +"Create fullstack applications with a companion "
-                    link(
+                    a(
                         "https://github.com/rjaros/kilua-rpc",
                         "Kilua RPC",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
@@ -89,7 +89,7 @@ fun IComponent.features() {
                 }
                 li {
                     +"Translate your application to other languages with "
-                    link(
+                    a(
                         "https://www.gnu.org/software/gettext/",
                         "Gettext",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"

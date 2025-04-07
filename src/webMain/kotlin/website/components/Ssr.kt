@@ -26,19 +26,19 @@ import androidx.compose.runtime.Composable
 import dev.kilua.core.IComponent
 import dev.kilua.html.Outline
 import dev.kilua.html.OutlineStyle
+import dev.kilua.html.a
 import dev.kilua.html.br
 import dev.kilua.html.div
 import dev.kilua.html.h2
 import dev.kilua.html.h3
 import dev.kilua.html.li
-import dev.kilua.html.link
 import dev.kilua.html.p
 import dev.kilua.html.section
 import dev.kilua.html.ul
 
 @Composable
 fun IComponent.ssr() {
-    link {
+    a {
         id("ssr")
         tabindex(-1)
         outline(Outline(style = OutlineStyle.None))

@@ -24,11 +24,11 @@ package website.components
 
 import androidx.compose.runtime.Composable
 import dev.kilua.core.IComponent
+import dev.kilua.html.a
 import dev.kilua.html.br
 import dev.kilua.html.footer
 import dev.kilua.html.img
 import dev.kilua.html.li
-import dev.kilua.html.link
 import dev.kilua.html.span
 import dev.kilua.html.ul
 
@@ -47,26 +47,26 @@ fun IComponent.footer() {
         )
         span("block text-center font-bold") {
             +"Created by "
-            link(
+            a(
                 "https://github.com/rjaros",
                 "Robert Jaros",
                 className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
             )
             br()
-            link(
+            a(
                 "mailto:rjaros@treksoft.pl",
                 "rjaros@treksoft.pl",
                 className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
             )
             br()
             +"Website created with "
-            link(
+            a(
                 "https://github.com/spacemadev/elevate-free-tailwind-business-template/tree/main",
                 "Elevate",
                 className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
             )
             +" and "
-            link(
+            a(
                 "https://tailwindcss.com",
                 "Tailwindcss",
                 className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
@@ -74,17 +74,17 @@ fun IComponent.footer() {
         }
         ul("flex justify-center mt-10 space-x-8 mb-10") {
             li {
-                link("https://github.com/rjaros/kilua", icon = "fab fa-github fa-2x") {
+                a("https://github.com/rjaros/kilua", icon = "fab fa-github fa-2x") {
                     ariaLabel("GitHub")
                 }
             }
             li {
-                link("https://kotlinlang.slack.com/?redir=%2Fmessages%2FC06UAH52PA7", icon = "fab fa-slack fa-2x") {
+                a("https://kotlinlang.slack.com/?redir=%2Fmessages%2FC06UAH52PA7", icon = "fab fa-slack fa-2x") {
                     ariaLabel("Slack")
                 }
             }
             li {
-                link("https://dev.to/t/kilua/latest", icon = "fab fa-dev fa-2x") {
+                a("https://dev.to/t/kilua/latest", icon = "fab fa-dev fa-2x") {
                     ariaLabel("Dev.to")
                 }
             }

@@ -25,13 +25,13 @@ package website
 import dev.kilua.Application
 import dev.kilua.CssRegister
 import dev.kilua.FontAwesomeModule
-import dev.kilua.JsModule
 import dev.kilua.TailwindcssModule
 import dev.kilua.compose.root
 import dev.kilua.ssr.SimpleSsrRouter
 import dev.kilua.startApplication
 import dev.kilua.theme.ThemeManager
 import dev.kilua.useModule
+import js.import.JsModule
 import website.components.features
 import website.components.footer
 import website.components.header
@@ -39,7 +39,7 @@ import website.components.hero
 import website.components.learning
 import website.components.ssr
 
-@JsModule("./modules/css/custom.css")
+@JsModule("/kotlin/modules/css/custom.css")
 external object CustomCss
 
 external fun KotlinPlayground(selector: String)
@@ -56,7 +56,7 @@ class App : Application() {
         ThemeManager.init()
 
         root("root") {
-            SimpleSsrRouter(initPath = "/") { ->
+            SimpleSsrRouter {
                 header()
                 hero()
                 features()

@@ -24,9 +24,9 @@ package website.components
 
 import androidx.compose.runtime.Composable
 import dev.kilua.core.IComponent
+import dev.kilua.html.a
 import dev.kilua.html.div
 import dev.kilua.html.li
-import dev.kilua.html.link
 import dev.kilua.html.nav
 import dev.kilua.html.ul
 
@@ -36,17 +36,17 @@ fun IComponent.mobileMenu(className: String) {
         id("mobile-menu-placeholder")
         ul {
             li {
-                link("#features", "Features", className = "hover:text-secondary font-bold")
+                a("#features", "Features", className = "hover:text-secondary font-bold")
             }
             li {
-                link("#learning", "Learning", className = "hover:text-secondary font-bold")
+                a("#learning", "Learning", className = "hover:text-secondary font-bold")
             }
             li {
-                link("#ssr", "SSR", className = "hover:text-secondary font-bold")
+                a("#ssr", "SSR", className = "hover:text-secondary font-bold")
             }
         }
         div("flex flex-col mt-6 space-y-2 items-center") {
-            link(
+            a(
                 "https://github.com/rjaros/kilua?tab=readme-ov-file#building-and-running-the-examples",
                 "Get started",
                 className = "bg-primary hover:bg-secondary text-white font-semibold px-4 py-2 rounded-full inline-block flex items-center justify-center min-w-[110px]"
