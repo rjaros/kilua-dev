@@ -1,8 +1,8 @@
 [versions]
-kilua = "0.0.23"
-kilua-rpc = "0.0.32"
+kilua = "0.0.24"
+kilua-rpc = "0.0.33"
 kotlin = "2.2.0-Beta1"
-compose = "1.8.0-beta02"
+compose = "1.8.0-rc01"
 ktor = "3.1.2"
 
 [libraries]
