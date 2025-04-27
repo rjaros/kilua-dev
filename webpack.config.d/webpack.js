@@ -35,7 +35,7 @@ if (config.devServer) {
         "tom-select/dist/css/tom-select.min.css": false,
         "trix/dist/trix.css": false,
         "/kotlin/tailwind/tailwind.twcss": false,
-        "/kotlin/modules/css/style.css": false,
+        "/kotlin/modules/css/custom.css": false,
     }
 }
 
