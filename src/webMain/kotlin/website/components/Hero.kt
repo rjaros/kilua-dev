@@ -34,10 +34,16 @@ import dev.kilua.html.perc
 import dev.kilua.html.section
 import dev.kilua.html.span
 import website.KotlinPlayground
+import website.MarketplaceWidget
 
 @Composable
 fun IComponent.hero() {
-    section("mt-16") {
+    section {
+        div("container mx-auto flex flex-col md:flex-row md:space-x-4 items-center justify-end py-5") {
+            div(id = "marketplace")
+        }
+    }
+    section {
         div("container mx-auto flex flex-col xl:flex-row xl:space-x-4 items-center justify-between") {
             div("xl:w-1/2 mb-8 xl:mb-0") {
                 h2("text-3xl font-bold mb-4") {
@@ -93,6 +99,7 @@ fun IComponent.hero() {
                     LaunchedEffect(Unit) {
                         if (renderConfig.isDom) {
                             KotlinPlayground(".code-blocks-selector")
+                            MarketplaceWidget.setupMarketplaceWidget("install", 27530, "#marketplace")
                         }
                     }
                 }
