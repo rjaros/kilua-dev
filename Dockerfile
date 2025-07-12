@@ -1,4 +1,4 @@
-FROM gradle:8.12.1-jdk21 AS build
+FROM gradle:8.14.3-jdk21 AS build
 
 WORKDIR /app
 
@@ -6,7 +6,7 @@ COPY . .
 
 RUN gradle jarWithJs --no-daemon
 
-FROM ghcr.io/graalvm/native-image-community:23 AS graalvm
+FROM ghcr.io/graalvm/native-image-community:24 AS graalvm
 
 WORKDIR /app
 
@@ -34,7 +34,7 @@ RUN native-image --no-fallback \
     -H:IncludeResources="assets/.*txt$" \
     -cp kilua-dev.jar -H:Class=website.MainKt -o kilua-dev
 
-FROM node:23
+FROM node:24
 
 WORKDIR /app
 

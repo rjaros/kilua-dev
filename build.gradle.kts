@@ -95,7 +95,7 @@ kotlin {
 
 composeCompiler {
     targetKotlinPlatforms.set(
-        KotlinPlatformType.entries
+        KotlinPlatformType.values()
             .filterNot { it == KotlinPlatformType.jvm }
             .asIterable()
     )
