@@ -27,7 +27,7 @@ import dev.kilua.CssRegister
 import dev.kilua.FontAwesomeModule
 import dev.kilua.TailwindcssModule
 import dev.kilua.compose.root
-import dev.kilua.ssr.SimpleSsrRouter
+import dev.kilua.ssr.ssrRouter
 import dev.kilua.startApplication
 import dev.kilua.theme.ThemeManager
 import dev.kilua.useModule
@@ -60,13 +60,15 @@ class App : Application() {
         ThemeManager.init()
 
         root("root") {
-            SimpleSsrRouter {
-                header()
-                hero()
-                features()
-                learning()
-                ssr()
-                footer()
+            ssrRouter {
+                defaultContent {
+                    header()
+                    hero()
+                    features()
+                    learning()
+                    ssr()
+                    footer()
+                }
             }
         }
     }
