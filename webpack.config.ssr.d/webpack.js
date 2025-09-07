@@ -26,18 +26,11 @@ config.resolve.alias = {
     "tom-select/dist/css/tom-select.default.min.css": false,
     "tom-select/dist/css/tom-select.min.css": false,
     "trix/dist/trix.css": false,
-    "/kotlin/modules/css/custom.css": false
+    "./modules/css/custom.css": false
 }
-if (config.devServer) {
-    config.devServer.hot = true;
-    config.devServer.open = false;
-    config.devServer.port = 3000;
-    config.devServer.historyApiFallback = true;
-    config.devtool = 'eval-cheap-source-map';
-} else {
-    config.devtool = undefined;
-    config.target = 'node';
-}
+config.resolve.modules.push("kotlin");
+config.devtool = undefined;
+config.target = 'node';
 
 // disable bundle size warning
 config.performance = {

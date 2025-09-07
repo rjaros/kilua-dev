@@ -31,15 +31,15 @@ import dev.kilua.ssr.ssrRouter
 import dev.kilua.startApplication
 import dev.kilua.theme.ThemeManager
 import dev.kilua.useModule
-import js.import.JsModule
 import website.components.features
 import website.components.footer
 import website.components.header
 import website.components.hero
 import website.components.learning
 import website.components.ssr
+import kotlin.js.JsModule
 
-@JsModule("/kotlin/modules/css/custom.css")
+@JsModule("./modules/css/custom.css")
 external object CustomCss
 
 external fun KotlinPlayground(selector: String)

@@ -66,7 +66,7 @@ jobs:
           node-version: 24
 
       - name: Distribution
-        run: ./gradlew exportWithJs
+        run: ./gradlew exportWithWasmJs
 
       - name: GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

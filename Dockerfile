@@ -1,10 +1,10 @@
-FROM gradle:8.14.3-jdk21 AS build
+FROM gradle:9.0.0-jdk21 AS build
 
 WORKDIR /app
 
 COPY . .
 
-RUN gradle jarWithJs --no-daemon
+RUN gradle jarWithWasmJs --no-daemon
 
 FROM ghcr.io/graalvm/native-image-community:24 AS graalvm
 
@@ -27,6 +27,7 @@ RUN native-image --no-fallback \
     -H:+ReportExceptionStackTraces \
     -H:IncludeResources="ssr.zip" \
     -H:IncludeResources=".*/assets/.*" \
+    -H:IncludeResources="assets/.*wasm$" \
     -H:IncludeResources="assets/.*js$" \
     -H:IncludeResources="assets/.*html$" \
     -H:IncludeResources="assets/.*ttf$" \
