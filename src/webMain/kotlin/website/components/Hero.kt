@@ -52,7 +52,7 @@ fun IComponent.hero() {
                     +" web framework for Kotlin/Wasm and Kotlin/JS"
                 }
                 p("my-7") {
-                    +"Kilua is an open source web framework for Kotlin, based on Compose Multiplatform runtime. It allows you to create declarative UI components and manage their state. Kilua renders to plain HTML DOM (not canvas) and supports both Kotlin/Wasm and Kotlin/JS targets. It provides a lot of ready to use components. It's the only Kotlin UI framework with full support for true SSR (Server-Side Rendering)."
+                    +"Kilua is an open source web framework for Kotlin, based on Compose Multiplatform runtime. It allows you to create declarative UI components and manage their state. Kilua renders to plain HTML DOM (not canvas) and supports both Kotlin/Wasm and Kotlin/JS targets. It provides a lot of ready to use components. It's the first Kotlin UI framework with full support for true SSR (Server-Side Rendering)."
                 }
                 div("flex space-x-5 items-center") {
                     a(

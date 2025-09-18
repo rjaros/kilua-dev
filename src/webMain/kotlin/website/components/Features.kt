@@ -85,7 +85,7 @@ fun IComponent.features() {
                         "Kilua RPC",
                         className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
                     )
-                    +" library supporting Ktor, Spring Boot, Micronaut, Javalin, Jooby and Vert.x servers (Micronaut support is temporarily disabled)."
+                    +" library supporting Ktor, Spring Boot, Micronaut, Javalin, Jooby and Vert.x servers."
                 }
                 li {
                     +"Translate your application to other languages with "
@@ -100,7 +100,7 @@ fun IComponent.features() {
                     +"Deploy your application with full SSR for better SEO performance and user experience."
                 }
                 li {
-                    +"Export your application as a set of static HTML files for more affordable hosting solutions.bg"
+                    +"Export your application as a set of static HTML files for more affordable hosting solutions."
                 }
             }
         }
