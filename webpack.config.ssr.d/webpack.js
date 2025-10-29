@@ -31,6 +31,7 @@ config.resolve.alias = {
 config.resolve.modules.push("kotlin");
 config.devtool = undefined;
 config.target = 'node';
+config.output.chunkFormat = false;
 
 // disable bundle size warning
 config.performance = {
