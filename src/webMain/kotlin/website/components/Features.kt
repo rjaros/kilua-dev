@@ -52,6 +52,15 @@ fun IComponent.features() {
                     +"Use powerful Compose programming model and state management to develop web applications."
                 }
                 li {
+                    +"Work with super fast hot reload and full HMR using "
+                    a(
+                        "https://gitlab.com/opensavvy/automation/kotlin-vite",
+                        "Vite for Kotlin",
+                        className = "font-bold text-primary dark:text-primarylink hover:text-secondary"
+                    )
+                    +" plugin."
+                }
+                li {
                     +"Choose from the wide range of ready to use components and form inputs."
                 }
                 li {
