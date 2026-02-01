@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Kilua</title>
+    <title>Forms - Kilua</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/favicon.png">
@@ -33,27 +33,530 @@
 </head>
 <body>
 <div id="root">            <script>
-            window.KILUA_SSR_STATE = "N4KABBYEQA4IYHMCmUBc0ASB7AtikAvkA";
+            window.KILUA_SSR_STATE = "N4KABBYEQA4IYHMCmUBc0BiB7ATgWwGcoAacSKHJAOwBMlKaAFRFdKAHgAsBGMASxoBeADpQAZrkKiAfNnwF2Aeh7ThVdjFmSCYOJTBYqSA2LAAXTsbxYCZ-nhi4zcKnfg4zOrKYDiAVQBJEzA8FwBPXRgYABs+AGM4Mz5DAmIwJAIYJDi+OGjoiItjQwywAHdOeM4wOKx87LsXGhCXFjAaRLg1MRwsPHNLMABXAnoCADowABUcOBo+JMM8grBOJtiqBDAACSmAWQAZMAl5fh04Gr6YpAAPMBheuIzUy4cbJGbvFqoIglD8sC2JAwHSxADWxhicBymx2+wO3Ukl1cvWiXioA0hLDSozMSVhTXafEy0TgYT4sIpC1y0XanTSlDmFK2I3odOcx16-Qp8wAbgIhnk4Yd0tEkHhqJ5dLRuhTloVZlQCCc8Mzpc1eXkBIk1UV2XBJgE7MgpUhedRyrhRvxTGEsENdPoRmq4iMzH0wPyCILabU3kZXDoTq9rjc1B0OWYwlkdABadlINJJCUMqrmW5mNJ4IbRJLXQFIMVxTPDGJYOYfY58MU6JBmOLjJSaNQaaQAaWrgrAYqldodZVwYPKC2qKp0FN0nvovz4DjFaVqSuJZkl6vSYjE8T4q7KZMNdkqdHOAL9of15kVyskOpSagpBAExj1PTgEoHOCH0SwCHia+8YjGMA+0nMQcxWKMsljAg4AAsAACMeTVOC6zKJALT7HBz0JDDjm0fdVjgHRvSiJxcJwNRQh+IkN3oSU0jgrALEBWd80JU8xRuNIVWRMxUQmMAAEFaH4Y0+HNHRgMZGhCiwYZrQjC5NViCNkioRtFGbdROAAJn4IRRBVWMFNjaw6GiGQ5H6BSQiwMylB01R1E0Szz2JGyzMrMoR0nWwmj0Zo20YjZzziUkCFrKg1ioJ5mi8pj2FqOhpAAAQAZXoGk+AALzgOCxSURKkGkaUqEYm8qG6LkwHYC5OEoMQRCgTg8RBVBFEUH8LCGODxj9RRArMDZFDBIKKRucZRhwTKcsWCqoHMPQTUagB9PKXDBUQwEoaJGtKrAsiMTDSvq+hKHIqBpBGwaxomjKtRm1SlDgYrYjg2YcDCSYAFFzQ+qtC0+UwLDc0zCxqMKCDUTg6hoHQ9SUoZilMEp+CoGAhjsBZxS26g6AYYdgYxC4VUmKZBlB2liMcDx4MI39rIgjJ0AS2yitS3jmQK1npDSFmkoAOSGPBkJwLmkoACjvaLoiGeZYT5oqAlcMWisJBXpAAEXtPKkBV6QAEpecK6QACEsDqJAXD1o3uYOLAEmiDXEl1xRjZtpK7YdqZZxdt3quNz28idldvYlPW1zyAhZIuOh5gSFdmkZlsA+XAAyXMAG42wwaskFThAzAz8PxYuWJbGCIYywrZpNxrfX1M0jRKGkBXwcIghGs4aIACtQRcBBBWQWMro2GR2EyFw2-Czue4IEy6y6C60ru2Icp1pQJ6oRzx-gDFQvbmfe+HpAwnfGgZAUjfd+KnfJ-36fRC7o+IVP3Bz4u++FEUTeb83qeO8frPWMSRBrGE-stCykg9is2iFfFw0hJYYkgLfPeEND5zxfmfGQSk4Fb3TDcMw6B2ZTU2AAfjAIIaqf9P7oNjLEFcsxzIXSoGBXBPM1CQCobvf+tDMFv2wXkNh9x25nyIRzMhFCuF3zQYAo+9D6B5BkCw-IbDiAcOQdQmRTUgF8JwO-aQODv7X2EeFM+2kxEkIQOQyhKCeGyLnvIxhSjWFGPgWopBEBbE0PscfV+eiBGwNcXglcBC9CWwscyaxUjUEHx8Y4xRzCXE-3cZwrxWin4YJPlgi6hif5bSqCEwhYBiGRMkWk2J2i5FYycYklRQT2EeOiXYypmS-H6NycYiMSB0CB0ds7KJ5SH4tLodUhJ0hlGBOSeozxmiKkZN8dkgxgj6nmB9j0+2eRQ5IAGbMoZ8z4lMPGUk6+KSNHcO8cM3R7Tll5LiJYOIYIGI3GZrsgBwy4JDGrGYZaFIZBmwtlbFZNjXm0IOTIMQkcXZTMaYMt58yrkBKEbMeYWAXnnPSUAj5XyflzVNubMUgK8nAvRXMoBYKLoQrRFCk50ymkXPhVk-hOSbnGNGEWIpJSJHEukaSqpDCxkTNUbS2FvDGX+OZZM4x7pCCFgaBErldKMV8oUYcwV9TTkzJJXsnRYrrmSvgYCGAFJDpop5dqo+WLcw4pkErMwbCdlarhWS0ZqrjluOFSCnxCKJVIqZN+Xold5VWLKZ64Z5Kjl1Ohak0NDK2mIpWZXL8cwelp0ztnXO+dC4OrNU65VNSI36q3mofWLZXbcybM3dgfJmmhA-DQLAZQqCxjyPQOwtawT1sbc2sUHhYwsScC4MwMgWwwBrXoDtDam0tt7SAsUY8CC8i2Bc+2SRFwGGLPEQwsZKDUzbTgWM2lNr8iQGUM2NxGoAAYwBXu4AANjAHezaXkaAWEao++alg+AIGam+29m09C5FjIeOgVBGq8URmPeATF9JQD2De8YAB2AArAAYSvYhgAHAAFkw1h69D7ENIevTwbS4xUPcCQ+MbSd78M0dww++93BCO8gAJxkYEkx5DBGuNXpvQ+nD2kiPcAAMzbAw+MC9t7ogHrIwh4TYBSNIbkxx8YWGkMYYI2pjTvGH1gHk9wHDSGsPCYAGoie2JxpDKmuOWfw3xm9THBMAC08CWdjFRpDBpBMebs9e9z3nBOsbI3EdDInxPcG4KRgLlHBM6QNMhwjvneCEeY6R7gLHoikYQ9pGT2X4tYbYwhgrSWwBkeE-57SnBb1ka8zFojOn0OCf80h3ksY2OeY8z5hrzXmsuYQwpjzvJFPxcozx2jsYmP1da8NlLY2+OTevU5vYLGwAsbgLwXg82D20d0zp3gukL1ObHhpRInAW7f0XdIAIbwPCDqbNvTQAB1SwGI6CbioGqbi1kKZAXtGAIwlZ3QtAhICIY+hliYn+tEWGBFzTtCQBCnMdgEYZAbtvRQfJt46T0o1HofRYyLl4nUSGF0MBVUJ3xey2kHvtk7BcP0pQ4rVAuB86K1QviWrMH2jEuB3I5j0GRfop4bC5RrGRb4ER5g0UoK4cw0ZShfC+50VA92WzOB1tvIocxNc4E12dlDVwRfr0UBYPXmtOhy6yEoU3auzvQJoDmF2Nv1Cm41hkOIU0YCzWt2d0tvF0da5oJrhi0kW7+7V0H9WhTxb6z1tboPEeW7G05VYuPJuE8u6D5z7n8fNdB4Evguwm4Aa5797rtX5fM9J+5oUgSjIY9p7MBn9gTfq9JRT6QxvzfW-Z4pKXqvBfCmOktv363leW-j9b+reApi34N7LUlUfU-k-iNTwvoqS+s+fNzDn9PefpAF5nwQM+UOaCj5N5PyfkfjZ3OyGCM98-jab7b0Vf5BL1Dr-O63xPveP-f4HzUPco8lgDcOfuHi7lfi-tIBzOzM7ChkAQ-rHp-s-urG-pbFQJ3sgXvj-tvlzn3tgQARzFBM4CuIAXfk8mAOLEzv7NzGqsbICCQUgEgf-mPjrvvurMiskI-uWgQS3tftzGgYCk-rwT3rgbviwa3gXpwbJB8niIYGAZfuwcbNIT4AGjANwYviIfwe3qvpgcIRIVvl8uId3vnmAAgGocENIfBBjO6EqAoWwYnurLUF+DgIwPEBCDgBoRvloVAR3l3vvr-s-kJMKEcM4bzkag8vQPYRXkobQULBlHEF4V-iYVAYLMLPQHoTwQYdIIET4QXiwhKFNHEKftERAbEUlIqMgEkSgcbGkSLJkZodkbkdkVIf3MYMXtDqURPuUUVJkMavQNUT4erLag0d4U0WIfgS0Yav0UdPEUUSUbwRfg4VXurGyg0IMdkerH4VgeMUYZMSkQXg+HOMYGscWAsSwUsTEY4cbF0hsSkerL0sHNsv4TgXsX-gccxMcSEQmPcO4VEYseAd0dcdzF0lsncT0dII8c7FsqMckQERMe8fvocSxGKN8V0muMmJCH8aLACYocCUlJieCfiUVL0jCS8VXs0R8UcfmLsCKJib8ZETiRcYCSydoUVImuWDQESSsSnLYOnIXOmmKJmhnLCc-pSUiWADnKiRER4V0ayVAbOIRGCGkQkdyXwakULPUeSeqWCHTn2qEAQGCEEf9nMb+B0bFN5AabqZsHKZARwVUFMBmGqcvtzNsfoSkbqTLHAMAlNKAXkfkncoXukPMO6Eyc3pcWUcSdIEUZwE8c6WyZCRsn0iuKKT4Z6YKMAuKOjHPPWqqCwl-FMTGT8TKf8cyXiTydzDGU8WCUge6RCVCSHD7Kmdkemd6SuA4CMEZH0BSCMMaUWeiYSPSSWWGQHuWeqfaXcjWdqS6R7EmWSTsR6Xqe2dmV2Xmb2f6UWUOdibaRCdKulOyvGb4bodOUHq2cAvjqcXahuWmJeeceGSyXacbNKlMPLnAJYHMIeVsceQufvmedKlBLKsWMaUPuaQTMzhjPbFcD2E7veePibiHmEF-qLkVC2NjgII1B7pbPiAgM2rGCqDIChoyNhSBJIFTjTlMLJJhc7CRfgGAN3G6HJMYBcOrCqEkSGEbqiaBNFLNGkM6ASJbliLMBKAwuLr5KuueBTGjiOpCXWKnAAMTCYsYZw6CWrNCTy3Cvj5hfg-gYgqhpDUFmADgMF+R6Kn7nDCRzAhmqRCipwACOQwjEGclAEo6RmEEodlDlhcZBDyTykwj2xgXkAIrIAwbkCkFEMC-8KuGkD2lahUzSGS3Y-cg8SAw8o0uKIqPiwli8KU6UU090yFbCLYMaOqcaF0l8KyGVlyuqMgn8QilV8ys6YCEMECF0dsOllkbCiC0ajqoqpVSyhaxUrIOAVAr43SxSuhIaPVcSLqzikaNKMKxVz81VPqKyR+oi41li2aMS5qDiM1tSA1GqiqvKrSiyHSBqzl4oIsewY19VmKuB1qF0ghH+RKR1O1Iy-KhylKowhVVAJaH+whDwG+T2JxzgNM1BzFxsKo4cwu0EOsUVjcgNL+8Vs8iVmwyVqV10uKKo-JGcbVFIlkwpYAwAagAAvqWgDZWpoPzBmPpcYADonNHDQDXEiBTsTvDTFRvnFfSijaSGjSwBjaPBSpIDjXjVQATQXBnETbStHn9ZwmtXPrLZALfg8ogaTeTTwYja2P5ciEYGcdxKzWiGBQYGDhJRFXxVsOrAhLQOHMJdDM0A7GiOzSOrFazMjb3KjQPPzSPL8kLfgCLd+PjcLRLVLY0kPsTY0pwlbVyaLZZKgKgENSNRKIrRAGTY0vLaZeHZwpHTyOLDHZIHHenTQMnWAKnZwsrffiASHVnZAFHbnQHWLfnagBda5ddcXananWnprVTQ2sbZhNxOLLYEUYNL8FkHANaVsPTobgGHYFRQnPBIUIMDDchfpZUIGQkBiMhLoHEE8OFJ5N5FHpUAQMlFDZ-gYORFQJQGYGDkYBafFJDZIAAEoI5E0k3hyah5Wy5fB6hL06z6w1CTyb28RYWViESTjWmAxgAeWOVrQPLwQgFQOFx+VgIAOMTVAmhri4hqB6jWTm293uRgyfxG3qwmjBxwBsVqzGy4ikNsW222T8RKx4MJDWioT-0YhUhJD3RPiDDcRM5qBRwSj-ZbpvZwBI6eh5CIw6DiwcHiiXX0DXWSLga+zcx-2EgPAUh2DaUTjWQwQiWhTuG6iDAIO4311GPWFyFUBO1OQu10Bu19x81Dze1Y3C2Zx51+3B2Z2QBh20rZ20B13tWN0J2jVt20qF1V3V3wQ52uN4AF0iJvzBONLl1nphPV211RNx3N1XVMG0ql0102GGBSOLVzyD3MgyBGOi1GNsJ-0ePV2GAoaxCwPVPhMQBqOuDRBUAFNTXDLFObClP2WOWi36imrbW5pFPdS2AyAAAkwAwMR9JMJDnQMer99SFT9SxdnCOTKdtKBwIjbOHwX0NExYHTOatCnOD10gfgH2V5P8VT3jZyxzXqy10Bh9bCt1R8BAYQwsdQMgx9pF9St0Zg1DUT4sGTcjxg3KwzoKe10BOAiMlT8THdWBXd0gAA8ibdxG5O+OPfRBjCJPJYpcpYI8jtOFvTvQ+DrPRNkCI9aEUODvoKVIlchIbcGPaH3duNDvxNrevboEzZiP0JRD6AUJY03Jza7dze7bzZ7Q42leCs44XFE4TY06SIy+LM1HgNEHIJNfc106vr055RnIE+5X04XJU8k1nQANSvNFM6sXRGN+CTSJ3dIrM-zZPS1OkCCasQs+LdMIC6uOUGt5xGtFyrOms+PR312x3x32tBMuuNJKuFgqtmBqsavgu2PEGWK+uFyF1OvXw3MR2QAWuFNpslM2uBvMCz56KoDZvwIxty2xN6LizusptitWvpslt6tZuBsmuNOht+OB34AxPltF01uQBxvRAJtJu85NtKotvFvSBGMgs4BVtby5tNMFudPzLesZsZxP0uUiwhCOudv1LDsQCJMgENvNBTvHVFs9NtuOULtLs8xiMyxguvUjPvUqoyCKNdu3MQCpPhuN0Lut3HtmO2FHOevauttzuBvlOHvXMhuQC1P1NDjdvhMtODTtOWvXs+u3tyv12DOvu0LehwTjMXRTMzM-P4DjDzPOCLNsIPtrOQAbMl1bM7O340D7MASHOYenM+3nOXPft5uapauxqLIzMvOFvvOfOHIUd4BsL-OAv-v4DAsyMt0vuYfhpfurPwvq2aFIucuTyRyyTBUQ3czmmPYjjbOMvhyWDRBZB91DDcWqQr1piBW0giPSo6gO0RDICHTUUBAay6B4hTSyGlDMsm0G0EBCua1c3Tse3o2OMyt+0uOKd4AKu0pmcWe5TxuYebs4cZx2v0AOv0fwcQDR6NsiQrtNM12RMpdx3+sMebONJMcZcWCWfZcSfWtQd6tlvH5vzFcofNN1tcnlcLCVdVcRO+NpOoCF0NfMdNfpdss0DmetdZdjs5eddGM7uyNuUBt6sCdNOns3DnuSKjcldZ1-v+P9tN0qeZOzdMdMeyGgfreQdlMmOwc5tneIfuFndy0kLodgepu5ddf9N4cKRDOA9jNDqkfTOH0ydUd1jUP6xLM-z0c-tzfrMscOdsccfrHcf3W8cXMLD7fhOYfepPPEjifrtAKScMTScn0-zycLNAuAdqeFsacwvUrwL6zaf-Ua2U0H7CTvbyjlDINEw8v8PtEcQUG2BhAbBbBA6hAg7PhIjWD6BegCsRBwBRCWxy9RfWNNXHVxde3Su+2pfJeXepfuO0q8jMBGBjsIBa8eupsFEiwyCUZsIwA3BjdZ2hA3DmcvqcAA-Nuxgu-0AyBYYXoXrqQ-ye+zecC2-xv0W2B8BiBhAG6uCriUIABSboKfafhgK4rg4wqU8ATwJsKEaEVAaQDvo6l7b1of500gFG0f18sfP3kALXnAbXa3HXL3gbBXw1o1-XaPTTZXF7FX7f43F3fb0TkbhX0bgnVXTHTTy-jHaP8fLgifufqf6fhfdg2f2-+fGfRfJf0ISA5fhllf1fjvdfb7DfMgzfHvXvk-p+y3Xfq3Qf07WHW7PXZ8w-i-TTQusd0oSncBu43arpN1q7Tchus3FfiPzX6L9V+EADfnb3FhJ8kgO-AvpnzAA59k+mA4-mYGL6g0SwNfJ3sH3v4XR3e9SNvmAM4Sd9u+n-K9kD0243c2QhrPbuqgZaFgBIYgESrf0hYfVP2HPYnuAKVoIEz2I3MwN71EE9spuLPWAeEyQFZ0lBSglAVvzwFH89+kiXARgM0GShxgKGSUPQGkHhNHu+TZ7rO1e46V-+MghDlQDqbfdaB4AtDm00YFvVmB0HUHsrgI5etIekzGHsSDh7UcyGSPOju9y57wDq6SgjHogOA7bMselgdjgczMBuC32PHXFITyuYfcwBpPR5mJ3qQ5cPmtPb5vT2viM8aOzPVgTgHkb8Dpqggi6Jp2uY89O6laNCjBkMhKRtQs0SBLRU6EqR5CyganNJQ7BelBcRESuLuifZdDVIolZkJxUW7mVmamEZXrRVAYXAKgFsSYAAE0-sXLS2A+BWDtpAQfQdogsN0CQwL6SAeynwHxi4NpG1w-GJQk070F3Ao1BhNsN2GTxMg2QPPlMP6G6Uses0RYekBwC9Adu4UFgEGF5wPhNg8wgGBcLuHGwo6b-EzFqH+HXUIRyAG2nWDtqowgQcwYINSVRKW0eQesD4Q6C5aGcCwdgdWH0MSC4Bw4XFDdIYHFx6gNhc6KgNxDYhAFIc20cqAQEqAgh4IFfC0FLgAgy4i8CwyYDnBGr5AwgaQYCFyzpGkEVh-QAyoMFpFojnYSRCiDiNsh68RWNjZtkbylaY1EuZvXDhbzS6NIbem-e3jfx8HDIKB0gKgTH2f5gDfe-vCwKkNoTOiI+UfJ-nHwT5jt0BefXftgJ0FhisBJ-UvufxFFV8zCDozDs6Mf7UD3RkQ1-pl2VYWCb2wPQuAPyK7hDl2L-UNiiK1GzQMR0EKolN3q4ljwmDbQgSjjAAABCWoWGihZqo8kqcTShnG7EOBJaCwcYCjmbHNjxgYoTYExBxptj5kzo7SBehNZA4cx2HPMRnD2BwAbgs4IWN2GoAFxqgbkOcYAT0DQgGEBAB9hmJiGiCVB6-YMWgMP7hjZcB-DQfeMIGn8y+8Y6-rX0dEzjNSYfC6KmLdEmDq69Aj-kuJ-5DcbBtgkxL13raSCGQVwz5I8K-HOp6h0LWFsGycFT8auFvAdtBKHYADFBGYq8YvzUEhi7x0Y-fjgLIkECiBegEgUmMLbOjXRrfdMfhIgDATsxvfSwYGy26uV92D7NIKOx4F8CkJeaMZI0OyHnixBd+B-JIMAkyDp+DdK7vIMkmNdLxaPVQTeNDH4CtBj43Qc+IMFGCcAckyOnkww6cTcxVgikBBNsFfcGmKkrOrkL6op8hEPoh5n1XyE-xChUnEob8wZ7KikAMeYyZBJcFmSqebzDbp4J0r4ccufg6HuRzmYI8FmoQ5ZkWINj2SLxkE6IQgLgHzcbR5Yydmd0cmLJnJKyVyVVXcnPN6kAAbRrFRsJQAAXQoTTiSqonSqT-BqlQDC69UoKRAEHG1AYAYQBtgQCVh9CyBX-dnmhOSSow+hlYtoM1PCl989WWsKgPJRuDaQEMGcOwMFT1DQQBG-rNcB2w4HXN1JIkk6kymkCFhvqKyDCSJHUlxDWOiQnHlx0LbpCZAmQkQQ5MLZk8PJ18LycUKXilD4E5QshpUN3agsxpV7CaZz2XbNDEW-PMmMYEoDehcwXgIGIMGVEzCHg9sZ4MPkJZEgSQZIEBhBVCCrp5QhoJUCuDmBJhLAmvfQM4XZR71CYkOdWKiOUjlQ9YagLAHBG7gNBnOa9ABkxW3rPBGZ1QTUWzNmiwEVwGAL8GUHDhYy7OUYYIKqPYrT1yRrDRisnG5gYzDAkspANLIbS9Q6g7KASAQF1lsUgcUUGgKiW1lEwiIzgWgP5HYrWgxKSAfcHiyUo6BK45gWSMBGhhlBvZ+MqEAvSQBqB6ZDQSsDbP1CkxD6ZwAwFQBWDqUbgmlMUAaKRrGiJW8XE3tIGxrm8Z+1o7qsJxannSzqeCSOUVPOlwQwgQiG2brP1llBDZ9QYsCbLNl-VreN40gfNLniMSW+8CGgWj3LnippAJUvJOLBtnjBiQI0tEZAx7F9iYAktMeRSBmnPA2grY06e+3zSdiJJrEokLyDrEns6guAcWAbhcLjAn6eEyCWADNYLyqAS8zEUgBHGES7pi-T0QIG9HJifxjff0T3K3ix9rxdo28U+PInaCqJe-YvrGIv6oRqAH4iGfXw-kP8mJvcliaIPYntcwpM7Cyf3zqm7dHKH00QWPxO4lhKADwysJ3PXliThB6E9KRAKW4jhWZ0wwwLNOrFQDaxN00QQ2KHHiNjAq89Th2LdR4JZ5vYnsSJA4XPsRxY4ncZOMzikLZx844NouPMnLijGa4jcdmH6Djjdxscg8XciPHFgxgZ47eTlIvlZTVJBExfgPL1TVzyxqkAsaNUkQ2yOp2EufoPwan9yvpjzYecYlHlWLDANiiUKQnHnDSb5U8wQKQqhlCIAAPuEr+HlRfF2yAJV9AcBRhns1AJ+sQovahKoW4krni-2rSsKlaB8zwsfNwCnyPgCg6uuYpkAeKDUXi8WdYqwXxLElYQZJVQFSUITSle881qBLy6xLY5RCtpTQH0VGK15ZPS6dDN-hoKFk50qpXghqX0KqAsS8eUEuUiMKuFGSlCZvOyV5Lq6V87xfMvqWLy0RKyh+QYuyngCiJTTEiQAr0lALdJUY6ia+LjGX8oFiYz8e-NcrwLv50gPudvJQU98JlHg7ruBNSk9Ss6QA2CTjDSUwK32YSyhScpSZYSZ+OEs+GUuUGPzYhZitxX1RLnFQbZv-N+HYt2UOLEV0AwdvVNcUTKye0y4qLMv+F4q9E-iieUssbZrKP2DQihXkkiXRLZodKmgAyoIAJKvcTSl7K0puEkKWV+aLJcWJum5L7JYRQpQUpKXnzIJFSi6FSsoK4qhuDSwVc0pFUMAQVq7LpSuJ5W9L4JoqgZalPskk1hljzUZXVUxXFSxALkjVYO0WW3yqxqyteeGg2VSqqFEAHZbUsMA8rXVhy5ecgGOVGK0Vhi8Jpcq0l6CHxlEwBfcuIHQLpFcCygZ8u+XILFub-BgYapYFgydu-ErgdECElshxV5CyaVvIvmHdgBE-LZedwRWKTZ+ykuFejzOVPyLlmkkBRGO7VF9DBGfIyS-zMGhTC5C0riXqxg5HSq1kE2ych19XWqnJjq0qSqvJ5fxPJEnIoV8wBm+Syh-kwKR0sAF-dXBeayKVo28ExTiOUPaQGR1h4JSAWSU5HtfFR6tqMptg4xW2qiHAdlRBUnIfaqmVLqR5K6n6fAiJVNq6uWCxqSEoXWtSKe1Uqbl1JBV9T9og0xlaNPLWHJJVj7A5cstDWs9-lEUpaYYFWnrTNpjFSHLtOMD7TVGQKqdREMQHQbzptq66RmIWAdrTlEAeIbsySGccUhePbFAT346wqmmQGtqb9I3XeTt1+AOTlQyZ4pdlOBamoZ6syXsqc2sMimhvjaEYU3Q+ORmHhQWEEVtN-QRmGZTIrSUXI32CKvWgyArSFKSlOwFTFIiuhbAHoRmF4BxZf1BgTybFpjDMDuyCWjgcKHwB1gBzLKoOEiDTGDA4RJ0Alc4d2EMA+sRqEkT4XvEMC-Q7AMzGLUDkJB45+gJnHQpYjJGq4nImsBHBSCYo1BDN-8cXDhEkpgAjQ-2NCDDjy1FR3QKeGhnqIZrIg0tIkHQAzFkh6gvyBW0+k2NZDnwqATOCcMTCRCEgBR9oaHMKILB5VV4yFI2vTkq2TRpo9AKSlY0NEG8dqJolKglwuiYcsq3zXKtNGQpUFvIlCZFtzIaABAaA52zhjgDjqfwkCzrdQH+sHm1UKqhbRqv-Baoos7txYB7Z1RXXYq9I4PYPq9Iui2oPpK6rAL9Cmh0A7VEypkd0OO1fb9EXFVHaOrniNVP2WAFPJTzx2xhXhUgC6PPk8n1Ig0hUrHTIEvrX1cd4HDdgRpwWFt36uQHWJMwEBhDaNRaXKanSKoUrHmXMnmUBRWS3bxdZgB7U9tXhsh0AbYOXdlHoA40pd92gZVbwWoi6+qiO06I+GZ2psyeEOo8B7j4Be5cARCFeG7gIBm6LdmEShKpTqbtw5dNuu3aGTKms7FpjlP0OMA0rHFxg6ukHeav51pTtdpOsnnrtBEG7ftaOwEapHnQ67FkOO2PaToJ1lUMgK8FXSTpZ1AJydJOBBHQEKgva15ScC6G7mL2VMXmNOsAEHpl3NBf1Se4uSygNSD1JERe1mDgHGAd66AbW2biusZ3DUhEdeh7QPV4jjB3QtqQKcBwR1I6Y9eSTDujoT2Y6m9g8lPQvr+0LA50F0DbZwxz2pt89MgcWNQGL1Q6v+Ze6QF9Giid7VET7RGGfqvYX6R9Z+VZtXryRgCT9nev3dft72r4aliMCfUTr-3c8Y2CLdTS3G7r+zFRk8baTHMIYTaMQOECzWZG23Cs05sXDOcbzNEr7Sdp2peMrrXj5Qj2n21ffonKob7SDNVCGIbuD7-bwEPQ2TvUi6p3Nc9S1LFS3uCQZgg0W1VNl6r4UNIC5rBs6YPIh2F1uDUKgQayoLRCpw9QhyZSIY4PFQxdGu9AM-p4PB8+Dc1atr9R07eE9OL2GoERTVBTb8ACo5LWRvCA8RUQtMUYJ8AxCDbOYp9BmPLjXDBUSRtAFDIZuxEWBbIAc2esYDCpUAo6zIVA9F1FYYGkqWBwWtAQzCmso6nh5zXgHFgRtlDwev6mAb54abdI6FUQNJETrxA8K2gGQBrDCD5HiiY4UzcVtSgnDMS44XzbZoJalQ3ANgMlqiSBxghSo-s7Bhbh+web2iSIZCAkFgOnD4RDWwHDISYpM0QGtARQLzmcp66xteR18PEDJmSloRQwQMsFSYalARhXYZYA2iS0OgFeEVJAxbnBo0Ekoa4mADjRTxpAhIYQUhMKXDiMxo5xgFHOcEoB8MkgAIYpsWHAjy4aA3m37A6HpoBytjhEYillqFnhRIctQUEQ0Bi1fAFIpMSikRXK1LHVQ5RpEOgI1nqB76Um0+j-VRJM57QjQKiMZvJ11g2QbENExNzlgIBPZMIrYFCAnDes9IkoFPtuBwCRcitaB1uOnMiOmjoj3ERpr8s93U82d+YrBdZKzr4KQBUgodTnRPV6t-Wz6qNSYrYnZqsxqC0nQCsco8qZTtbQdrWtAEZja6ypxyodJwWrM2NGpkDuYIUVbtJ11puDmANnUv9wdihloK8vp0NDRN8CP6VupSiAyt48Pe9TRxRUhTxTY6jBXq1iUP73BsU69cAFCAwAqpFpwuKqdSn1TH18CNU84KPUjq5DepwuDyoTNvsiOJHZM6mfTOOm8uVp41vUhzN86XTObW03NwyO6dm4JAMgBAFgCUB+Q9oAgMwGQBoBoAP0SUEQFICcIoARgAhCOdYDQBUoi6a7JCKgAgASaQAA";
             </script>
-            <div id="main-content"><div class="bg-base-100 drawer mx-auto max-w-[80rem]"><input class="drawer-toggle" id="drawer" type="checkbox"><div class="drawer-content"><div class="bg-base-100/90 text-base-content sticky top-0 z-30 flex w-full [transform:translate3d(0,0,0)] justify-center backdrop-blur transition-shadow duration-100 print:hidden border-b-2 border-b-black dark:border-b-white"><nav class="navbar w-full py-4"><div class="flex flex-1 items-center md:gap-2 lg:gap-3"><span class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]" data-tip="Menu"><label class="btn btn-square btn-ghost drawer-button" for="drawer" aria-label="Open menu"><svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 stroke-current md:h-8 md:w-8" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke-line-cap="round" stroke-line-join="round" stroke-width="2"></path></svg></label></span><a class="flex w-35 shrink-0 items-center gap-2" href="/"><img class="h-10 w-auto mr-4 hidden dark:block" src="assets/images/logo-color.png" alt="Kilua Logo"><img class="h-10 w-auto mr-4 block dark:hidden" src="assets/images/logo-black.png" alt="Kilua Logo"></a></div><div class="flex gap-1 md:gap-2 lg:gap-3 items-center"><div class="hidden flex-none items-center md:inline-block"><a class="btn btn-ghost drawer-button font-bold" href="/introduction">Introduction</a></div><div class="hidden flex-none items-center md:inline-block"><a class="btn btn-ghost drawer-button font-bold" href="/development-guide">Learning</a></div><div class="hidden flex-none items-center md:inline-block"><a class="btn btn-ghost drawer-button font-bold" href="/development-guide/server-side-rendering">SSR</a></div><a class="min-w-26 bg-primary hover:bg-secondary text-white font-semibold px-4 py-2 rounded-full text-center" href="/getting-started">Quickstart</a><button class="bg-neutral-500 text-white font-bold inline-block bg-primary hover:bg-secondary w-10 h-10 px-3 rounded-full" type="button" title="Switch color theme"><i class="bi bi-moon"></i></button></div></nav></div><div class="relative max-w-[100vw] px-4 pt-4 pb-16 xl:pe-2"><section><div class="container mx-auto flex flex-col md:flex-row md:space-x-4 items-center justify-end pb-4"><div class="border border-neutral-500 rounded-full overflow-hidden"><div id="marketplace"></div></div></div></section><section><div class="container mx-auto flex flex-col xl:flex-row xl:space-x-4 items-center justify-between"><div class="xl:w-1/2 mb-8 xl:mb-0"><h2 class="text-3xl font-bold mb-4">Kilua - <span class="text-primary">@Composable</span> web framework for Kotlin/Wasm and Kotlin/JS</h2><p class="my-7">Kilua is an open source web framework for Kotlin, based on Compose Multiplatform runtime. It allows you to create declarative UI components and manage their state. Kilua renders to plain HTML DOM (not canvas) and supports both Kotlin/Wasm and Kotlin/JS targets. It provides a lot of ready to use components. It&#039;s the first Kotlin UI framework with full support for true SSR (Server-Side Rendering).</p><div class="flex space-x-5 items-center"><a class="bg-primary hover:bg-secondary text-white font-semibold px-4 py-2 rounded-full inline-flex items-center gap-x-2 icon-link" href="https://github.com/rjaros/kilua"><i class="bi bi-github"></i>GitHub</a><p>Current version: 0.0.32</p></div></div><div class="xl:w-1/2 hidden md:block"><code class="code-blocks-selector" data-highlight-only="nocursor" theme="darcula" auto-indent="true" mode="kotlin" lines="false" style="width: 100%;">class App : Application() {
-    override fun start() {
-        root(&quot;root&quot;) {
-            var state by remember { mutableStateOf(&quot;Hello, world!&quot;) }
-
-            div {
-                +state
+            <div id="main-content"><div class="bg-base-100 drawer mx-auto max-w-[80rem] lg:drawer-open"><input class="drawer-toggle" id="drawer" type="checkbox"><div class="drawer-content"><div class="bg-base-100/90 text-base-content sticky top-0 z-30 flex w-full [transform:translate3d(0,0,0)] justify-center backdrop-blur transition-shadow duration-100 print:hidden border-b-2 border-b-black dark:border-b-white"><nav class="navbar w-full py-4"><div class="flex flex-1 items-center md:gap-2 lg:gap-3"><span class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]" data-tip="Menu"><label class="btn btn-square btn-ghost drawer-button lg:hidden" for="drawer" aria-label="Open menu"><svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 stroke-current md:h-8 md:w-8" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke-line-cap="round" stroke-line-join="round" stroke-width="2"></path></svg></label></span><a class="flex w-35 shrink-0 items-center gap-2 lg:hidden" href="/"><img class="h-10 w-auto mr-4 hidden dark:block" src="assets/images/logo-color.png" alt="Kilua Logo"><img class="h-10 w-auto mr-4 block dark:hidden" src="assets/images/logo-black.png" alt="Kilua Logo"></a></div><div class="flex gap-1 md:gap-2 lg:gap-3 items-center"><div class="hidden flex-none items-center md:inline-block"><a class="btn btn-ghost drawer-button font-bold" href="/introduction">Introduction</a></div><div class="hidden flex-none items-center md:inline-block"><a class="btn btn-ghost drawer-button font-bold" href="/development-guide">Learning</a></div><div class="hidden flex-none items-center md:inline-block"><a class="btn btn-ghost drawer-button font-bold" href="/development-guide/server-side-rendering">SSR</a></div><a class="min-w-26 bg-primary hover:bg-secondary text-white font-semibold px-4 py-2 rounded-full text-center" href="/getting-started">Quickstart</a><button class="bg-neutral-500 text-white font-bold inline-block bg-primary hover:bg-secondary w-10 h-10 px-3 rounded-full" type="button" title="Switch color theme"><i class="bi bi-moon"></i></button></div></nav></div><div class="relative max-w-[100vw] px-4 pt-4 pb-16 xl:pe-2"><article class="prose prose-a:text-primary prose-a:hover:text-secondary prose-pre:p-1 max-w-none"><div style="display: contents;"><h1 id="forms">Forms</h1>
+<p>Forms are one of the most important parts of GUI of many applications, especially the ones which collect and manage data
+from the users. Traditionally handling HTML forms is a complex process, composed of many small steps like placing HTML
+form controls on the page, setting and displaying initial data, reading user data from individual HTML elements and
+finally transforming and validating the data. It gets even worse if you are using custom visual components for complex
+data types - date, time, rich text, multiple select, uploaded files etc.</p>
+<p>Kilua lets you work with forms in a very simple, consistent and efficient way. It hides all complex data transformations
+inside the framework logic and offers you a fully type-safe binding between your data and your forms. It has support for
+many different, both simple and complex, form controls. And it gives you ready to use data validation.</p>
+<h2 id="form-data-model">Form data model</h2>
+<p>Form data is modeled with a standard Kotlin data class enhanced with <code>@Serializable</code> annotation
+from <a href="https://github.com/Kotlin/kotlinx.serialization" target="_blank" rel="noopener noreferrer">kotlinx.serialization</a> library. Every field of this model class
+holds the value of one input item rendered within a form. The model support basic data types: <code>String</code>, <code>Number</code>(
+including <code>Int</code>and <code>Double</code>), <code>Boolean</code>, <code>LocalDate</code>, <code>LocalTime</code>, <code>LocalDateTime</code> and also a dedicated type
+<code>List&lt;KFile&gt;</code> (a list of uploaded files).</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-meta">@Serializable</span>
+<span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FormModel</span>(
+    <span class="hljs-keyword">val</span> text: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> password: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> password2: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> textarea: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> richtext: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> date: LocalDate? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> time: LocalTime? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> checkbox: <span class="hljs-built_in">Boolean</span> = <span class="hljs-literal">false</span>,
+    <span class="hljs-keyword">val</span> radio: <span class="hljs-built_in">Boolean</span> = <span class="hljs-literal">false</span>,
+    <span class="hljs-keyword">val</span> select: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> tomselect: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> spinner: <span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> radiogroup: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> upload: List&lt;KFile&gt;? = <span class="hljs-literal">null</span>
+)
+</code></pre><div class="markdown-alert markdown-alert-important">
+<p class="markdown-alert-title"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
+<p>When defining form data model you need to make sure all the fields have default values.</p>
+</div>
+<h2 id="from-controls">From controls</h2>
+<p>Kilua comes with a bunch of built-in or modular form composables for many different types of form data:</p>
+<table>
+<thead>
+<tr>
+<th>Composable</th>
+<th>Data type</th>
+<th>Module</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>text()</code></td>
+<td><code>String?</code></td>
+<td>built-in</td>
+<td>A text field</td>
+</tr>
+<tr>
+<td><code>textArea()</code></td>
+<td><code>String?</code></td>
+<td>built-in</td>
+<td>A text area</td>
+</tr>
+<tr>
+<td><code>password()</code></td>
+<td><code>String?</code></td>
+<td>built-in</td>
+<td>A password field</td>
+</tr>
+<tr>
+<td><code>checkBox()</code></td>
+<td><code>Boolean</code></td>
+<td>built-in</td>
+<td>A checkbox</td>
+</tr>
+<tr>
+<td><code>triStateCheckBox()</code></td>
+<td><code>Boolean?</code></td>
+<td>built-in</td>
+<td>A tri-state checkbox (with <code>null</code> state)</td>
+</tr>
+<tr>
+<td><code>radio()</code></td>
+<td><code>Boolean</code></td>
+<td>built-in</td>
+<td>A radio button</td>
+</tr>
+<tr>
+<td><code>radioGroup()</code></td>
+<td><code>String?</code></td>
+<td>built-in</td>
+<td>A group of radio buttons</td>
+</tr>
+<tr>
+<td><code>colorPicker()</code></td>
+<td><code>String?</code></td>
+<td>built-in</td>
+<td>An HTML color picker</td>
+</tr>
+<tr>
+<td><code>numeric()</code></td>
+<td><code>Number?</code></td>
+<td>built-in</td>
+<td>A numeric field</td>
+</tr>
+<tr>
+<td><code>range()</code></td>
+<td><code>Number?</code></td>
+<td>built-in</td>
+<td>A range field</td>
+</tr>
+<tr>
+<td><code>spinner()</code></td>
+<td><code>Int?</code></td>
+<td>built-in</td>
+<td>A spinner numeric field</td>
+</tr>
+<tr>
+<td><code>select()</code></td>
+<td><code>String?</code></td>
+<td>built-in</td>
+<td>A simple select field</td>
+</tr>
+<tr>
+<td><code>date()</code></td>
+<td><code>LocalDate?</code></td>
+<td>built-in</td>
+<td>A simple HTML date picker</td>
+</tr>
+<tr>
+<td><code>dateTime()</code></td>
+<td><code>LocalDateTime?</code></td>
+<td>built-in</td>
+<td>A simple HTML date and time picker</td>
+</tr>
+<tr>
+<td><code>time()</code></td>
+<td><code>LocalTime?</code></td>
+<td>built-in</td>
+<td>A simple HTML time picker</td>
+</tr>
+<tr>
+<td><code>upload()</code></td>
+<td><code>List&lt;KFile&gt;?</code></td>
+<td>built-in</td>
+<td>A File picker</td>
+</tr>
+<tr>
+<td><code>imaskNumeric()</code></td>
+<td><code>Number?</code></td>
+<td>kilua-imask</td>
+<td>A numeric field with masking</td>
+</tr>
+<tr>
+<td><code>richText()</code></td>
+<td><code>String?</code></td>
+<td>kilua-trix</td>
+<td>A rich text editor</td>
+</tr>
+<tr>
+<td><code>richDate()</code></td>
+<td><code>LocalDate?</code></td>
+<td>kilua-tempus-dominus</td>
+<td>A rich date picker</td>
+</tr>
+<tr>
+<td><code>richDateTime()</code></td>
+<td><code>LocalDateTime?</code></td>
+<td>kilua-tempus-dominus</td>
+<td>A rich date and time picker</td>
+</tr>
+<tr>
+<td><code>richTime()</code></td>
+<td><code>LocalTime?</code></td>
+<td>kilua-tempus-dominus</td>
+<td>A rich time picker</td>
+</tr>
+<tr>
+<td><code>tomSelect()</code></td>
+<td><code>String?</code></td>
+<td>kilua-tom-select</td>
+<td>A rich select field</td>
+</tr>
+<tr>
+<td><code>tomTypeahead()</code></td>
+<td><code>String?</code></td>
+<td>kilua-tom-select</td>
+<td>A text field with autocomplete</td>
+</tr>
+</tbody></table>
+<h2 id="creating-a-form">Creating a form</h2>
+<p>To create a form just use a <code>form()</code> composable function, using a type parameter for static data model.</p>
+<p>Let&#39;s build an example login form, with two standard fields and additional &quot;remember me&quot; checkbox. We will use this data
+model class:</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-meta">@Serializable</span>
+<span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">LoginForm</span>(
+    <span class="hljs-keyword">val</span> username: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> password: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> rememberMe: <span class="hljs-built_in">Boolean</span> = <span class="hljs-literal">false</span>
+)
+</code></pre><p>We start with a <code>form</code> composable:</p>
+<pre><code class="hljs language-kotlin">form&lt;LoginForm&gt; {
+}
+</code></pre><p>Next, we need to add form controls:</p>
+<pre><code class="hljs language-kotlin">form&lt;LoginForm&gt; {
+    text()
+    password()
+    checkBox()
+}
+</code></pre><p>We connect form controls with our data model using <code>bind</code> method calls:</p>
+<pre><code class="hljs language-kotlin">form&lt;LoginForm&gt; {
+    text {
+        bind(LoginForm::username)
+    }
+    password {
+        bind(LoginForm::password)
+    }
+    checkBox {
+        bind(LoginForm::rememberMe)
+    }
+}
+</code></pre><p>Now our form (strictly speaking a component created by the composable, which can be accessed with <code>this@form</code> or
+returned with <code>formRef {}</code> variant of the composable) can be treated as a kind of &quot;black box&quot;. We can both get and set
+the data using our model class with <code>getData()</code> and <code>setData()</code> methods. In our case we can initialize the form with
+some non-default values (<code>rememberMe = true</code>) and print login data after clicking the &quot;Login&quot; button:</p>
+<pre><code class="hljs language-kotlin">form&lt;LoginForm&gt; {
+    text {
+        bind(LoginForm::username)
+    }
+    password {
+        bind(LoginForm::password)
+    }
+    checkBox {
+        bind(LoginForm::rememberMe)
+    }
+    button(<span class="hljs-string">&quot;Login&quot;</span>) {
+        onClick {
+            println(<span class="hljs-string">&quot;Login data: <span class="hljs-subst">${this@form.getData()}</span>&quot;</span>)
+        }
+    }
+    LaunchedEffect(<span class="hljs-built_in">Unit</span>) {
+        <span class="hljs-keyword">this</span><span class="hljs-symbol">@form</span>.setData(LoginForm(rememberMe = <span class="hljs-literal">true</span>))
+    }
+}
+</code></pre><p>Our form is working, but it&#39;s not very accessible, because there are no labels for our fields. We can add them manually:</p>
+<pre><code class="hljs language-kotlin">form&lt;LoginForm&gt; {
+    label(htmlFor = <span class="hljs-string">&quot;username&quot;</span>) {
+        +<span class="hljs-string">&quot;Username:&quot;</span>
+    }
+    text(id = <span class="hljs-string">&quot;username&quot;</span>) {
+        bind(LoginForm::username)
+    }
+    label(htmlFor = <span class="hljs-string">&quot;password&quot;</span>) {
+        +<span class="hljs-string">&quot;Password:&quot;</span>
+    }
+    password(id = <span class="hljs-string">&quot;password&quot;</span>) {
+        bind(LoginForm::password)
+    }
+    label(htmlFor = <span class="hljs-string">&quot;remember&quot;</span>) {
+        +<span class="hljs-string">&quot;Remember me:&quot;</span>
+    }
+    checkBox(id = <span class="hljs-string">&quot;remember&quot;</span>, value = <span class="hljs-literal">true</span>) {
+        bind(LoginForm::rememberMe)
+    }
+    button(<span class="hljs-string">&quot;Login&quot;</span>) {
+        onClick {
+            println(<span class="hljs-string">&quot;Login data: <span class="hljs-subst">${this@form.getData()}</span>&quot;</span>)
+        }
+    }
+    LaunchedEffect(<span class="hljs-built_in">Unit</span>) {
+        <span class="hljs-keyword">this</span><span class="hljs-symbol">@form</span>.setData(LoginForm(rememberMe = <span class="hljs-literal">true</span>))
+    }
+}
+</code></pre><p>We can also use a <code>fieldWithLabel</code> helper function, which will automatically generate ID attributes for our controls:</p>
+<pre><code class="hljs language-kotlin">form&lt;LoginForm&gt; {
+    fieldWithLabel(<span class="hljs-string">&quot;Username&quot;</span>) {
+        text(id = it) {
+            bind(LoginForm::username)
+        }
+    }
+    fieldWithLabel(<span class="hljs-string">&quot;Password&quot;</span>) {
+        password(id = it) {
+            bind(LoginForm::password)
+        }
+    }
+    fieldWithLabel(<span class="hljs-string">&quot;Remember me&quot;</span>) {
+        checkBox(id = it) {
+            bind(LoginForm::rememberMe)
+        }
+    }
+    button(<span class="hljs-string">&quot;Login&quot;</span>) {
+        onClick {
+            println(<span class="hljs-string">&quot;Login data: <span class="hljs-subst">${this@form.getData()}</span>&quot;</span>)
+        }
+    }
+    LaunchedEffect(<span class="hljs-built_in">Unit</span>) {
+        <span class="hljs-keyword">this</span><span class="hljs-symbol">@form</span>.setData(LoginForm(rememberMe = <span class="hljs-literal">true</span>))
+    }
+}
+</code></pre><p>And finally we can add some flexbox styling to make the form more visually appealing:</p>
+<pre><code class="hljs language-kotlin">form&lt;LoginForm&gt; {
+    vPanel(gap = <span class="hljs-number">5.</span>px) {
+        maxWidth(<span class="hljs-number">400.</span>px)
+        hPanel(justifyContent = JustifyContent.SpaceBetween, gap = <span class="hljs-number">15.</span>px) {
+            fieldWithLabel(<span class="hljs-string">&quot;Username&quot;</span>) {
+                text(id = it) {
+                    bind(LoginForm::username)
+                }
             }
-            button(&quot;Add an exclamation mark&quot;) {
+        }
+        hPanel(justifyContent = JustifyContent.SpaceBetween, gap = <span class="hljs-number">15.</span>px) {
+            fieldWithLabel(<span class="hljs-string">&quot;Password&quot;</span>) {
+                password(id = it) {
+                    bind(LoginForm::password)
+                }
+            }
+        }
+        hPanel(justifyContent = JustifyContent.Start, gap = <span class="hljs-number">5.</span>px) {
+            fieldWithLabel(<span class="hljs-string">&quot;Remember me&quot;</span>, labelAfter = <span class="hljs-literal">true</span>) {
+                checkBox(id = it) {
+                    bind(LoginForm::rememberMe)
+                }
+            }
+        }
+        hPanel(justifyContent = JustifyContent.Center) {
+            button(<span class="hljs-string">&quot;Login&quot;</span>) {
                 onClick {
-                    state += &quot;!&quot;
+                    println(<span class="hljs-string">&quot;Login data: <span class="hljs-subst">${this@form.getData()}</span>&quot;</span>)
                 }
             }
         }
     }
+    LaunchedEffect(<span class="hljs-built_in">Unit</span>) {
+        <span class="hljs-keyword">this</span><span class="hljs-symbol">@form</span>.setData(LoginForm(rememberMe = <span class="hljs-literal">true</span>))
+    }
+}
+</code></pre><h2 id="form-validation">Form validation</h2>
+<p>Kilua forms support validation for single fields and for the form as a whole. You can easily mark some fields as
+required using <code>required = true</code> parameter. You can specify validation functions and error messages for single fields
+using <code>bindWithValidationMessage</code> method instead of simple <code>bind</code>. You can also set <code>validator</code> function for the whole
+form and check the relationships between different fields. Finally, you can validate the form with the <code>validate()</code>
+method:</p>
+<pre><code class="hljs language-kotlin">form&lt;LoginForm&gt; {
+    vPanel(gap = <span class="hljs-number">5.</span>px) {
+        maxWidth(<span class="hljs-number">400.</span>px)
+        hPanel(justifyContent = JustifyContent.SpaceBetween, gap = <span class="hljs-number">15.</span>px) {
+            fieldWithLabel(<span class="hljs-string">&quot;Username&quot;</span>) {
+                bindWithValidationMessage(LoginForm::username) {
+                    (it.value != <span class="hljs-literal">null</span> &amp;&amp; it.value!!.length &lt;= <span class="hljs-number">20</span>) to <span class="hljs-string">&quot;Maximum length is 20 characters&quot;</span>
+                }
+            }
+        }
+        hPanel(justifyContent = JustifyContent.SpaceBetween, gap = <span class="hljs-number">15.</span>px) {
+            fieldWithLabel(<span class="hljs-string">&quot;Password&quot;</span>) {
+                password(id = it, required = <span class="hljs-literal">true</span>) {
+                    bind(LoginForm::password)
+                }
+            }
+        }
+        hPanel(justifyContent = JustifyContent.Start, gap = <span class="hljs-number">5.</span>px) {
+            fieldWithLabel(<span class="hljs-string">&quot;Remember me&quot;</span>, labelAfter = <span class="hljs-literal">true</span>) {
+                checkBox(id = it) {
+                    bind(LoginForm::rememberMe)
+                }
+            }
+        }
+        hPanel(justifyContent = JustifyContent.Center) {
+            button(<span class="hljs-string">&quot;Login&quot;</span>) {
+                onClick {
+                    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span><span class="hljs-symbol">@form</span>.validate()) {
+                        println(<span class="hljs-string">&quot;Login data: <span class="hljs-subst">${this@form.getData()}</span>&quot;</span>)
+                    }
+                }
+            }
+        }
+    }
+    validator = {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>[LoginForm::username] == <span class="hljs-keyword">this</span>[LoginForm::password]) {
+            it.copy(isInvalid = <span class="hljs-literal">true</span>, invalidMessage = <span class="hljs-string">&quot;Don&#x27;t use the same username and password&quot;</span>)
+        } <span class="hljs-keyword">else</span> {
+            it
+        }
+    }
+    LaunchedEffect(<span class="hljs-built_in">Unit</span>) {
+        <span class="hljs-keyword">this</span><span class="hljs-symbol">@form</span>.setData(LoginForm(rememberMe = <span class="hljs-literal">true</span>))
+    }
+}
+</code></pre><p>The results of the validation process are not displayed automatically. Instead, they are collected within the <code>Validation</code>
+object, which can be accessed with <code>validationStateFlow</code> property of the form component. You can use
+<code>validationStateFlow.collectAsState()</code> to handle validation as standard compose state. It&#39;s up to you how to display the
+collected validation data. This is only an example:</p>
+<pre><code class="hljs language-kotlin">form&lt;LoginForm&gt; {
+    <span class="hljs-keyword">val</span> validation <span class="hljs-keyword">by</span> validationStateFlow.collectAsState()
+
+    vPanel(gap = <span class="hljs-number">5.</span>px) {
+        <span class="hljs-keyword">if</span> (validation.isInvalid &amp;&amp; validation.invalidMessage != <span class="hljs-literal">null</span>) {
+            div {
+                color(Color.Red)
+                +validation.invalidMessage!!
+            }
+        }
+        maxWidth(<span class="hljs-number">400.</span>px)
+        hPanel(justifyContent = JustifyContent.SpaceBetween, gap = <span class="hljs-number">15.</span>px) {
+            fieldWithLabel(<span class="hljs-string">&quot;Username&quot;</span>) {
+                text(id = it, required = <span class="hljs-literal">true</span>) {
+                    bindWithValidationMessage(LoginForm::username) {
+                        (it.value != <span class="hljs-literal">null</span> &amp;&amp; it.value!!.length &lt;= <span class="hljs-number">20</span>) to <span class="hljs-string">&quot;Maximum length is 20 characters&quot;</span>
+                    }
+                }
+            }
+        }
+        <span class="hljs-keyword">val</span> validationUsername = validation[LoginForm::username]
+        <span class="hljs-keyword">if</span> (validationUsername?.isInvalid == <span class="hljs-literal">true</span> || validationUsername?.isEmptyWhenRequired == <span class="hljs-literal">true</span>) {
+            div {
+                color(Color.Red)
+                <span class="hljs-keyword">if</span> (validationUsername.isEmptyWhenRequired) {
+                    +<span class="hljs-string">&quot;Username is required&quot;</span>
+                } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (validationUsername.invalidMessage != <span class="hljs-literal">null</span>) {
+                    +validationUsername.invalidMessage!!
+                }
+            }
+        }
+        hPanel(justifyContent = JustifyContent.SpaceBetween, gap = <span class="hljs-number">15.</span>px) {
+            fieldWithLabel(<span class="hljs-string">&quot;Password&quot;</span>) {
+                password(id = it, required = <span class="hljs-literal">true</span>) {
+                    bind(LoginForm::password)
+                }
+            }
+        }
+        <span class="hljs-keyword">val</span> validationPassword = validation[LoginForm::password]
+        <span class="hljs-keyword">if</span> (validationPassword?.isInvalid == <span class="hljs-literal">true</span> || validationPassword?.isEmptyWhenRequired == <span class="hljs-literal">true</span>) {
+            div {
+                color(Color.Red)
+                <span class="hljs-keyword">if</span> (validationPassword.isEmptyWhenRequired) {
+                    +<span class="hljs-string">&quot;Password is required&quot;</span>
+                } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (validationPassword.invalidMessage != <span class="hljs-literal">null</span>) {
+                    +validationPassword.invalidMessage!!
+                }
+            }
+        }
+        hPanel(justifyContent = JustifyContent.Start, gap = <span class="hljs-number">5.</span>px) {
+            fieldWithLabel(<span class="hljs-string">&quot;Remember me&quot;</span>, labelAfter = <span class="hljs-literal">true</span>) {
+                checkBox(id = it) {
+                    bind(LoginForm::rememberMe)
+                }
+            }
+        }
+        hPanel(justifyContent = JustifyContent.Center) {
+            button(<span class="hljs-string">&quot;Login&quot;</span>) {
+                onClick {
+                    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span><span class="hljs-symbol">@form</span>.validate()) {
+                        println(<span class="hljs-string">&quot;Login data: <span class="hljs-subst">${this@form.getData()}</span>&quot;</span>)
+                    }
+                }
+            }
+        }
+    }
+    validator = {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>[LoginForm::username] == <span class="hljs-keyword">this</span>[LoginForm::password]) {
+            it.copy(isInvalid = <span class="hljs-literal">true</span>, invalidMessage = <span class="hljs-string">&quot;Don&#x27;t use the same username and password&quot;</span>)
+        } <span class="hljs-keyword">else</span> {
+            it
+        }
+    }
+    LaunchedEffect(<span class="hljs-built_in">Unit</span>) {
+        <span class="hljs-keyword">this</span><span class="hljs-symbol">@form</span>.setData(LoginForm(rememberMe = <span class="hljs-literal">true</span>))
+    }
+}
+</code></pre><h2 id="custom-type-fields">Custom type fields</h2>
+<p>Form data model doesn&#39;t support custom types out of the box, but it&#39;s possible to add support for your own type as long
+as you can convert this type to and from a <code>String</code>.</p>
+<p>Define a custom class for your model. It needs a <code>toString()</code> method to convert its data to the <code>String</code> value used
+within a form and should be serializable with a custom serializer.</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-meta">@Serializable(with = ObjectIdSerializer::class)</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ObjectId</span>(<span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Int</span>) {
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">toString</span><span class="hljs-params">()</span></span>: String {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;<span class="hljs-variable">$id</span>&quot;</span>
+    }
 }
 
-fun main() {
-    startApplication(::App)
-}</code></div></div></section><section class="mt-16"><div class="container mx-auto"><h2 class="text-3xl font-bold mb-4">Features</h2><ul class="list-disc list-outside ml-4"><li>Use powerful Compose programming model and state management to develop web applications.</li><li>Work with super fast hot reload and full HMR using <a class="font-bold text-primary hover:text-secondary" href="https://gitlab.com/opensavvy/automation/kotlin-vite">Vite for Kotlin</a> plugin.</li><li>Choose from the wide range of ready to use components and form inputs.</li><li>Easily style your application using <a class="font-bold text-primary hover:text-secondary" href="https://tailwindcss.com">Tailwindcss</a> or <a class="font-bold text-primary hover:text-secondary" href="https://getbootstrap.com">Bootstrap</a>, with built-in support for dark mode.</li><li>Enhance user experience with lazy layouts, svg graphics and masked inputs.</li><li>Use built-in router for navigation, HTTP client for API calls and markdown parser to display your data.</li><li>Compile the same application code for Kotlin/Wasm or Kotlin/JS targets.</li><li>Create fullstack applications with a companion <a class="font-bold text-primary hover:text-secondary" href="https://github.com/rjaros/kilua-rpc">Kilua RPC</a> library supporting Ktor, Spring Boot, Micronaut, Javalin, Jooby and Vert.x servers.</li><li>Translate your application to other languages with <a class="font-bold text-primary hover:text-secondary" href="https://www.gnu.org/software/gettext/">Gettext</a> - one of the most widely used tool for i18n.</li><li>Deploy your application with full SSR for better SEO performance and user experience.</li><li>Export your application as a set of static HTML files for more affordable hosting solutions.</li></ul></div></section><footer class="mt-16"><img class="h-14 w-auto mx-auto mb-5 hidden dark:block" src="assets/images/logo-color.png" alt="Logo"><img class="h-14 w-auto mx-auto mb-5 block dark:hidden" src="assets/images/logo-black.png" alt="Logo"><span class="block text-center font-bold">Created by <a class="font-bold text-primary hover:text-secondary" href="https://github.com/rjaros">Robert Jaros</a><br><a class="font-bold text-primary hover:text-secondary" href="mailto:rjaros@treksoft.pl">rjaros@treksoft.pl</a><br>Website created with <a class="font-bold text-primary hover:text-secondary" href="https://tailwindcss.com">Tailwindcss</a> and <a class="font-bold text-primary hover:text-secondary" href="https://daisyui.com">DaisyUI</a></span><ul class="flex justify-center mt-10 space-x-8 mb-10"><li><a href="https://github.com/rjaros/kilua" aria-label="GitHub"><i class="bi bi-github text-3xl"></i></a></li><li><a href="https://kotlinlang.slack.com/?redir=%2Fmessages%2FC06UAH52PA7" aria-label="Slack"><i class="bi bi-slack text-3xl"></i></a></li></ul></footer></div></div><div class="drawer-side z-40" style="scroll-behavior: smooth; scroll-padding-top: 5rem;"><label class="drawer-overlay" for="drawer" aria-label="Close menu"></label><aside class="bg-base-100 min-h-screen w-80"><div class="bg-base-100/90 navbar sticky top-0 z-20 hidden items-center gap-2 px-4 py-4 backdrop-blur border-b-2 border-b-black dark:border-b-white"><a class="flex w-35 shrink-0 items-center gap-2" href="/"><img class="h-10 w-auto mr-4 hidden dark:block" src="assets/images/logo-color.png" alt="Kilua Logo"><img class="h-10 w-auto mr-4 block dark:hidden" src="assets/images/logo-black.png" alt="Kilua Logo"></a></div><ul class="menu w-full px-4 py-0 mt-4"><li><a href="/introduction">Introduction</a></li><li><a href="/compose-world">Compose world</a></li><li><details open="true"><summary>Getting started</summary><ul><li><a href="/getting-started/setting-up">Setting up</a></li><li><a href="/getting-started/creating-a-new-application">Creating a new application</a></li><li><a href="/getting-started/development-workflow">Development workflow</a></li><li><a href="/getting-started/building-for-production">Building for production</a></li></ul></details></li><li><details open="true"><summary>Development guide</summary><ul><li><a href="/development-guide/learning">Learning</a></li><li><a href="/development-guide/composable-functions">Composable functions</a></li><li><a href="/development-guide/browser-apis">Browser APIs</a></li><li><a href="/development-guide/interoperability-with-javascript">Interoperability with JavaScript</a></li><li><a href="/development-guide/working-with-compose">Working with Compose</a></li><li><a href="/development-guide/rendering-html">Rendering HTML</a></li><li><a href="/development-guide/working-with-css">Working with CSS</a></li><li><a href="/development-guide/resources">Resources</a></li><li><a href="/development-guide/icons">Icons</a></li><li><a href="/development-guide/modules">Modules</a></li><li><a href="/development-guide/routing">Routing</a></li><li><a href="/development-guide/layout-containers">Layout containers</a></li><li><a href="/development-guide/events">Events</a></li><li><a href="/development-guide/forms">Forms</a></li><li><a href="/development-guide/svg-images">SVG images</a></li><li><a href="/development-guide/drag-and-drop">Drag and Drop</a></li><li><a href="/development-guide/toasts">Toasts</a></li><li><a href="/development-guide/hot-module-replacement">Hot Module Replacement</a></li><li><a href="/development-guide/debugging">Debugging</a></li><li><a href="/development-guide/internationalization">Internationalization</a></li><li><a href="/development-guide/rest-client">Rest Client</a></li><li><a href="/development-guide/markdown-and-sanitization">Markdown and Sanitization</a></li><li><a href="/development-guide/ktml-templates">KTML Templates</a></li><li><a href="/development-guide/using-bootstrap">Using Bootstrap</a></li><li><a href="/development-guide/using-tailwindcss">Using Tailwindcss</a></li><li><a href="/development-guide/using-tabulator">Using Tabulator</a></li><li><a href="/development-guide/animation">Animation</a></li><li><a href="/development-guide/using-jetpack-compose-api">Using Jetpack Compose API</a></li><li><a href="/development-guide/fullstack-components">Fullstack components</a></li><li><a href="/development-guide/server-side-rendering">Server-Side Rendering</a></li></ul></details></li></ul><div class="bg-base-100 pointer-events-none sticky bottom-0 flex h-40 [mask-image:linear-gradient(transparent,#000000)]"></div></aside></div></div></div></div>
+<span class="hljs-keyword">object</span> ObjectIdSerializer : KSerializer&lt;ObjectId&gt; {
+    <span class="hljs-keyword">override</span> <span class="hljs-keyword">val</span> descriptor: SerialDescriptor = buildClassSerialDescriptor(<span class="hljs-string">&quot;com.example.ObjectId&quot;</span>)
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">deserialize</span><span class="hljs-params">(decoder: <span class="hljs-type">Decoder</span>)</span></span>: ObjectId {
+        <span class="hljs-keyword">val</span> str = decoder.decodeString()
+        <span class="hljs-keyword">return</span> ObjectId(str.toInt())
+    }
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">serialize</span><span class="hljs-params">(encoder: <span class="hljs-type">Encoder</span>, value: <span class="hljs-type">ObjectId</span>)</span></span> {
+        encoder.encodeString(value.toString())
+    }
+}
+</code></pre><p>Now you can use this class within your data model.</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-meta">@Serializable</span>
+<span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Form</span>(
+    <span class="hljs-keyword">val</span> text: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> password: String? = <span class="hljs-literal">null</span>,
+    <span class="hljs-keyword">val</span> objectId: ObjectId? = <span class="hljs-literal">null</span>
+)
+</code></pre><p>When creating a form, you can use any control based on <code>String</code> data type and use <code>bindCustom</code> method to create data
+binding.</p>
+<pre><code class="hljs language-kotlin">text {
+    bindCustom(Form::objectId)
+}
+</code></pre><h2 id="dynamic-forms">Dynamic forms</h2>
+<p>Sometimes it&#39;s not possible to know the data model of the form because the fields need to be added and/or removed
+dynamically. For such use cases Kilua allows you to model your data with a <code>Map&lt;String, Any?&gt;</code> type. The values are
+still strictly typed, but you need to use casting to access the correct type of data. To create a dynamic form just use
+<code>form</code> composable without any type parameter and create bindings using plain string identifiers:</p>
+<pre><code class="hljs language-kotlin">form {
+    fieldWithLabel(<span class="hljs-string">&quot;Username&quot;</span>) {
+        text(id = it) {
+            bind(<span class="hljs-string">&quot;username&quot;</span>)
+        }
+    }
+    fieldWithLabel(<span class="hljs-string">&quot;Password&quot;</span>) {
+        password(id = it) {
+            bind(<span class="hljs-string">&quot;password&quot;</span>)
+        }
+    }
+    button(<span class="hljs-string">&quot;Login&quot;</span>) {
+        onClick {
+            <span class="hljs-keyword">val</span> map = <span class="hljs-keyword">this</span><span class="hljs-symbol">@form</span>.getData()
+            println(<span class="hljs-string">&quot;Username: <span class="hljs-subst">${map[<span class="hljs-string">&quot;username&quot;</span>]}</span>&quot;</span>)
+            println(<span class="hljs-string">&quot;Password: <span class="hljs-subst">${map[<span class="hljs-string">&quot;password&quot;</span>]}</span>&quot;</span>)
+        }
+    }
+}
+</code></pre></div></article><div class="flex justify-between flex-wrap gap-2"><div class="grow text-left"><a class="btn btn-md md:btn-lg gap-2 lg:gap-3" href="/development-guide/events"><i class="bi bi-chevron-left"></i><div class="flex flex-col items-start gap-0.5 leading-[1.1]"><span class="text-base-content/50 hidden text-[0.7rem] font-semibold tracking-wide md:block">Previous</span><span>Events</span></div></a></div><div class="grow text-right"><a class="btn btn-md md:btn-lg gap-2 lg:gap-3" href="/development-guide/svg-images"><div class="flex flex-col items-end gap-0.5 leading-[1.1]"><span class="text-base-content/50 hidden text-[0.7rem] font-semibold tracking-wide md:block">Next</span><span>SVG images</span></div><i class="bi bi-chevron-right"></i></a></div></div><footer class="mt-16"><img class="h-14 w-auto mx-auto mb-5 hidden dark:block" src="assets/images/logo-color.png" alt="Logo"><img class="h-14 w-auto mx-auto mb-5 block dark:hidden" src="assets/images/logo-black.png" alt="Logo"><span class="block text-center font-bold">Created by <a class="font-bold text-primary hover:text-secondary" href="https://github.com/rjaros">Robert Jaros</a><br><a class="font-bold text-primary hover:text-secondary" href="mailto:rjaros@treksoft.pl">rjaros@treksoft.pl</a><br>Website created with <a class="font-bold text-primary hover:text-secondary" href="https://tailwindcss.com">Tailwindcss</a> and <a class="font-bold text-primary hover:text-secondary" href="https://daisyui.com">DaisyUI</a></span><ul class="flex justify-center mt-10 space-x-8 mb-10"><li><a href="https://github.com/rjaros/kilua" aria-label="GitHub"><i class="bi bi-github text-3xl"></i></a></li><li><a href="https://kotlinlang.slack.com/?redir=%2Fmessages%2FC06UAH52PA7" aria-label="Slack"><i class="bi bi-slack text-3xl"></i></a></li></ul></footer></div></div><div class="drawer-side z-40" style="scroll-behavior: smooth; scroll-padding-top: 5rem;"><label class="drawer-overlay" for="drawer" aria-label="Close menu"></label><aside class="bg-base-100 min-h-screen w-80"><div class="bg-base-100/90 navbar sticky top-0 z-20 hidden items-center gap-2 px-4 py-4 backdrop-blur border-b-2 border-b-black dark:border-b-white lg:flex"><a class="flex w-35 shrink-0 items-center gap-2" href="/"><img class="h-10 w-auto mr-4 hidden dark:block" src="assets/images/logo-color.png" alt="Kilua Logo"><img class="h-10 w-auto mr-4 block dark:hidden" src="assets/images/logo-black.png" alt="Kilua Logo"></a></div><ul class="menu w-full px-4 py-0 mt-4"><li><a href="/introduction">Introduction</a></li><li><a href="/compose-world">Compose world</a></li><li><details open="true"><summary>Getting started</summary><ul><li><a href="/getting-started/setting-up">Setting up</a></li><li><a href="/getting-started/creating-a-new-application">Creating a new application</a></li><li><a href="/getting-started/development-workflow">Development workflow</a></li><li><a href="/getting-started/building-for-production">Building for production</a></li></ul></details></li><li><details open="true"><summary>Development guide</summary><ul><li><a href="/development-guide/learning">Learning</a></li><li><a href="/development-guide/composable-functions">Composable functions</a></li><li><a href="/development-guide/browser-apis">Browser APIs</a></li><li><a href="/development-guide/interoperability-with-javascript">Interoperability with JavaScript</a></li><li><a href="/development-guide/working-with-compose">Working with Compose</a></li><li><a href="/development-guide/rendering-html">Rendering HTML</a></li><li><a href="/development-guide/working-with-css">Working with CSS</a></li><li><a href="/development-guide/resources">Resources</a></li><li><a href="/development-guide/icons">Icons</a></li><li><a href="/development-guide/modules">Modules</a></li><li><a href="/development-guide/routing">Routing</a></li><li><a href="/development-guide/layout-containers">Layout containers</a></li><li><a href="/development-guide/events">Events</a></li><li><a class="menu-active" href="/development-guide/forms">Forms</a></li><li><a href="/development-guide/svg-images">SVG images</a></li><li><a href="/development-guide/drag-and-drop">Drag and Drop</a></li><li><a href="/development-guide/toasts">Toasts</a></li><li><a href="/development-guide/hot-module-replacement">Hot Module Replacement</a></li><li><a href="/development-guide/debugging">Debugging</a></li><li><a href="/development-guide/internationalization">Internationalization</a></li><li><a href="/development-guide/rest-client">Rest Client</a></li><li><a href="/development-guide/markdown-and-sanitization">Markdown and Sanitization</a></li><li><a href="/development-guide/ktml-templates">KTML Templates</a></li><li><a href="/development-guide/using-bootstrap">Using Bootstrap</a></li><li><a href="/development-guide/using-tailwindcss">Using Tailwindcss</a></li><li><a href="/development-guide/using-tabulator">Using Tabulator</a></li><li><a href="/development-guide/animation">Animation</a></li><li><a href="/development-guide/using-jetpack-compose-api">Using Jetpack Compose API</a></li><li><a href="/development-guide/fullstack-components">Fullstack components</a></li><li><a href="/development-guide/server-side-rendering">Server-Side Rendering</a></li></ul></details></li></ul><div class="bg-base-100 pointer-events-none sticky bottom-0 flex h-40 [mask-image:linear-gradient(transparent,#000000)]"></div></aside></div></div></div></div>
 </body>
 </html>

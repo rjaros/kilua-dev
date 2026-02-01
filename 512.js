@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkkilua_dev=globalThis.webpackChunkkilua_dev||[]).push([[512],{512:(e,t,a)=>{function l(e){return{name:"Plain text",aliases:["text","txt"],disableAutodetect:!0}}a.r(t),a.d(t,{default:()=>l})}}]);

@@ -22,7 +22,7 @@ const loadApp = () => {
         return script;
     }
 
-    document.body.appendChild(createScript(hasSupportOfAllRequiredWasmFeatures() ? "originWasmMain.bundle.js" : "originJsMain.bundle.js"));
+    document.body.appendChild(createScript(hasSupportOfAllRequiredWasmFeatures() ? "originWasmKilua-dev.js" : "originJsKilua-dev.js"));
 }
 
 if (document.readyState === "loading") {
