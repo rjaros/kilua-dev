@@ -1,2 +1,8 @@
 @config "./tailwind.config.js";
 @import "tailwindcss";
+@plugin "daisyui" {
+   themes: winter --default, dark --prefersdark;
+}
+@plugin "@tailwindcss/typography";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@source inline("bg-neutral-500 text-white font-bold inline-block rounded-full");

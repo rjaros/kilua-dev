@@ -4,3 +4,6 @@
 build/
 out/
 /refresh.sh
+/refreshB.sh
+/refreshV1.sh
+/refreshV2.sh

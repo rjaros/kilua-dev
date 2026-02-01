@@ -1,6 +1,8 @@
 config.resolve.alias = {
     "zzz-kilua-assets/k-style.css": false,
+    "zzz-kilua-assets/k-animation.css": false,
     "zzz-kilua-assets/k-bootstrap.css": false,
+    "zzz-kilua-assets/k-jetpack.css": false,
     "zzz-kilua-assets/k-splitjs.css": false,
     "zzz-kilua-assets/k-tabulator.css": false,
     "zzz-kilua-assets/k-tempus-dominus.css": false,
@@ -9,7 +11,7 @@ config.resolve.alias = {
     "zzz-kilua-assets/k-trix.css": false,
     "@fortawesome/fontawesome-free/css/all.min.css": false,
     "bootstrap/dist/css/bootstrap.min.css": false,
-    "bootstrap-icons/font/bootstrap-icons.css": false,
+    "bootstrap-icons/font/bootstrap-icons.min.css": false,
     "@eonasdan/tempus-dominus/dist/css/tempus-dominus.min.css": false,
     "leaflet/dist/leaflet.css": false,
     "tabulator-tables/dist/css/tabulator.min.css": false,
@@ -36,6 +38,6 @@ config.output.chunkFormat = false;
 // disable bundle size warning
 config.performance = {
     assetFilter: function (assetFilename) {
-        return !assetFilename.endsWith('.js');
-    },
+      return !assetFilename.endsWith('.js');
+    }
 };

@@ -1,6 +1,6 @@
 config.resolve.fallback = {
-    "http": false,
-};
+    "http": false
+}
 config.resolve.modules.push("kotlin");
 if (config.devServer) {
     config.devServer.client = {
@@ -10,12 +10,15 @@ if (config.devServer) {
     config.devServer.open = false;
     config.devServer.port = 3000;
     config.devServer.historyApiFallback = true;
+//    config.devServer.compress = false; // workaround for SSE
     config.devtool = 'eval-cheap-source-map';
 } else {
     config.devtool = undefined;
     config.resolve.alias = {
         "zzz-kilua-assets/k-style.css": false,
+        "zzz-kilua-assets/k-animation.css": false,
         "zzz-kilua-assets/k-bootstrap.css": false,
+        "zzz-kilua-assets/k-jetpack.css": false,
         "zzz-kilua-assets/k-splitjs.css": false,
         "zzz-kilua-assets/k-tabulator.css": false,
         "zzz-kilua-assets/k-tempus-dominus.css": false,
@@ -41,12 +44,12 @@ if (config.devServer) {
         "trix/dist/trix.css": false,
         "./tailwind/tailwind.css": false,
         "./modules/css/custom.css": false,
-    };
+    }
 }
 
 // disable bundle size warning
 config.performance = {
     assetFilter: function (assetFilename) {
-        return !assetFilename.endsWith('.js');
-    },
+      return !assetFilename.endsWith('.js');
+    }
 };
