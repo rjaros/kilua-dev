@@ -54,7 +54,7 @@ fun IComponent.home() {
                 }
             }
             div("xl:w-1/2 hidden md:block") {
-                div("text-xs") {
+                div("text-xs border-2 rounded-xs") {
                     rawHtml(renderedCodeSample)
                 }
             }

@@ -25,7 +25,7 @@ fun IComponent.mainContent(page: Page, renderedPage: String?, previousPage: Page
 
         else -> {
             if (renderedPage != null) {
-                article("prose prose-a:text-primary prose-a:hover:text-secondary prose-pre:p-1 max-w-none") {
+                article("prose prose-a:text-primary prose-a:hover:text-secondary prose-pre:p-0 prose-pre:border-2 prose-pre:rounded-xs max-w-none") {
                     rawHtmlBlock(renderedPage) {
                         LaunchedEffect(renderedPage) {
                             if (renderConfig.isDom) {
