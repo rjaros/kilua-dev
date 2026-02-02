@@ -121,15 +121,17 @@ class App : Application(), KoinComponent {
     }
 
     private fun initDaisyUiTheme() {
-        if (ThemeManager.theme == Theme.Dark) {
-            document.documentElement.setAttribute("data-theme", "dark")
-        }
+        setTheme(ThemeManager.theme)
         unsubscribeThemeChanged = document.addEventHandler(EventType<CustomEvent<JsAny>>("kilua.theme.changed")) {
-            if (ThemeManager.theme == Theme.Dark) {
-                document.documentElement.setAttribute("data-theme", "dark")
-            } else {
-                document.documentElement.removeAttribute("data-theme")
-            }
+            setTheme(ThemeManager.theme)
+        }
+    }
+
+    private fun setTheme(theme: Theme) {
+        if (theme == Theme.Dark) {
+            document.documentElement.setAttribute("data-theme", "dark")
+        } else {
+            document.documentElement.setAttribute("data-theme", "winter")
         }
     }
 
