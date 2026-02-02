@@ -20,6 +20,8 @@
         if (storedTheme === 'dark' || ((storedTheme === null || storedTheme === 'auto') && preferredThemeDark)) {
             document.documentElement.classList.add('dark');
             document.documentElement.setAttribute("data-theme", "dark")
+        } else {
+            document.documentElement.setAttribute("data-theme", "winter")
         }
     </script>
     <script>var kilua_build_mode = '%MODE%';</script>
