@@ -3,25 +3,30 @@ package website.ui
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import dev.kilua.core.IComponent
-import website.externals.KotlinPlayground
-import website.externals.MarketplaceWidget
 import dev.kilua.html.a
-import dev.kilua.html.code
 import dev.kilua.html.div
 import dev.kilua.html.h2
 import dev.kilua.html.li
 import dev.kilua.html.p
-import dev.kilua.html.perc
+import dev.kilua.html.rawHtml
 import dev.kilua.html.section
 import dev.kilua.html.span
 import dev.kilua.html.ul
+import website.externals.MarketplaceWidget
+import website.externals.getMarked
 
 @Composable
 fun IComponent.home() {
     section {
         div("container mx-auto flex flex-col md:flex-row md:space-x-4 items-center justify-end pb-4") {
             div("border border-neutral-500 rounded-full overflow-hidden") {
-                div(id = "marketplace")
+                div(id = "marketplace") {
+                    LaunchedEffect(Unit) {
+                        if (renderConfig.isDom) {
+                            MarketplaceWidget.setupMarketplaceWidget("install", 27530, "#marketplace")
+                        }
+                    }
+                }
             }
         }
     }
@@ -49,42 +54,8 @@ fun IComponent.home() {
                 }
             }
             div("xl:w-1/2 hidden md:block") {
-                code(className = "code-blocks-selector") {
-                    width(100.perc)
-                    attribute("data-highlight-only", "nocursor")
-
-                    attribute("theme", "darcula")
-                    attribute("auto-indent", "true")
-                    attribute("mode", "kotlin")
-                    attribute("lines", "false")
-                    +"""
-                                class App : Application() {
-                                    override fun start() {
-                                        root("root") {
-                                            var state by remember { mutableStateOf("Hello, world!") }
-                                
-                                            div {
-                                                +state
-                                            }
-                                            button("Add an exclamation mark") {
-                                                onClick {
-                                                    state += "!"
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                
-                                fun main() {
-                                    startApplication(::App)
-                                }
-                                """.trimIndent()
-                    LaunchedEffect(Unit) {
-                        if (renderConfig.isDom) {
-                            KotlinPlayground(".code-blocks-selector")
-                            MarketplaceWidget.setupMarketplaceWidget("install", 27530, "#marketplace")
-                        }
-                    }
+                div("text-xs") {
+                    rawHtml(renderedCodeSample)
                 }
             }
         }
@@ -162,3 +133,30 @@ fun IComponent.home() {
         }
     }
 }
+
+private val codeSample = """
+```kotlin    
+class App : Application() {
+    override fun start() {
+        root("root") {
+            var state by remember { mutableStateOf("Hello, world!") }
+
+            div {
+                +state
+            }
+            button("Add an exclamation mark") {
+                onClick {
+                    state += "!"
+                }
+            }
+        }
+    }
+}
+
+fun main() {
+    startApplication(::App)
+}
+```
+"""
+
+private val renderedCodeSample = getMarked().parse(codeSample)
