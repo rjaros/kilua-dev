@@ -1,6 +1,6 @@
 # Learning
 
-This section gives you a deep understanding of building applications with Kilua. It covers the architecture, key concepts and most important features of the framework. It's still incomplete but already contains a lot of useful information.
+This section gives you a deep understanding of building applications with Kilua. It covers the architecture, key concepts and most important features of the framework.
 
 While learning and developing apps with Kilua, you may want to check the current [API documentation](https://rjaros.github.io/kilua/api/).
 
