@@ -72,7 +72,7 @@ fun IComponent.home() {
                 li {
                     +"Work with super fast hot reload and full HMR using "
                     a(
-                        "https://gitlab.com/opensavvy/automation/kotlin-vite",
+                        "https://vite-kotlin.opensavvy.dev",
                         "Vite for Kotlin",
                         className = "font-bold text-primary hover:text-secondary"
                     )
