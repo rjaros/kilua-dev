@@ -1,1 +1,0 @@
-(globalThis.webpackChunkkilua_dev=globalThis.webpackChunkkilua_dev||[]).push([[824],{824:()=>{}}]);
