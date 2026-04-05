@@ -107,7 +107,7 @@ vite {
     autoRewriteIndex.set(true)
     plugin("@tailwindcss/vite", "tailwindcss", libs.versions.tailwindcss.asProvider().get())
     build {
-        target = "es2020"
+        target = "es2015"
     }
     server {
         port = 3000
