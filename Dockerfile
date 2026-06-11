@@ -8,7 +8,7 @@ COPY . .
 
 RUN gradle jarWithWasmJs --no-daemon
 
-FROM ghcr.io/graalvm/native-image-community:24 AS graalvm
+FROM ghcr.io/graalvm/native-image-community:25 AS graalvm
 
 WORKDIR /app
 
