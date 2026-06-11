@@ -11,7 +11,7 @@ Kilua also supports [Vite for Kotlin](https://gitlab.com/opensavvy/automation/ko
 
 To build a typical Kilua application you should have some tools installed on your machine and available on the system PATH:
 
-* [JDK](https://jdk.java.net/) 21 (required)
+* [JDK](https://jdk.java.net/) 25 (required)
 * [Git](https://git-scm.com) with additional UNIX tools if using Windows (optional, but recommended)
 * GNU [xgettext](https://www.gnu.org/software/gettext) and [msgmerge](https://www.gnu.org/software/gettext) utilities to use internationalization features (optional)
 
