@@ -10,9 +10,9 @@ The template project uses Gradle version catalog. All plugins and dependencies a
 
 ```toml
 [versions]
-kilua = "0.0.34"
-kotlin = "2.3.20"
-compose = "1.11.0-beta01"
+kilua = "0.0.36"
+kotlin = "2.4.0"
+compose = "1.12.0-alpha01"
 
 [libraries]
 kilua = { module = "dev.kilua:kilua", version.ref = "kilua" }
@@ -42,7 +42,7 @@ plugins {
 
 @OptIn(ExperimentalWasmDsl::class)
 kotlin {
-    js(IR) {
+    js {
         useEsModules()
         browser {
             commonWebpackConfig {
