@@ -3,21 +3,13 @@ package website
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import app.softwork.routingcompose.Router
-import dev.kilua.Application
-import dev.kilua.CoreModule
-import dev.kilua.CssRegister
-import dev.kilua.Hot
-import dev.kilua.TailwindcssModule
+import dev.kilua.*
 import dev.kilua.compose.root
-import website.ui.layout
-import website.ui.mainContent
 import dev.kilua.html.div
 import dev.kilua.routing.global
 import dev.kilua.ssr.ssrRouter
-import dev.kilua.startApplication
 import dev.kilua.theme.Theme
 import dev.kilua.theme.ThemeManager
-import dev.kilua.useModule
 import dev.kilua.utils.isDom
 import kotlinx.serialization.json.Json
 import org.koin.core.component.KoinComponent
@@ -28,8 +20,8 @@ import web.dom.document
 import web.events.CustomEvent
 import web.events.EventType
 import web.events.addEventHandler
-import kotlin.js.JsAny
-import kotlin.js.JsModule
+import website.ui.layout
+import website.ui.mainContent
 
 @JsModule("./modules/css/custom.css")
 external object CustomCss

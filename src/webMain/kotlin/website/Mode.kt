@@ -1,5 +1,7 @@
 package website
 
-internal external val kilua_build_mode: String
+import dev.kilua.utils.isDom
 
-val isDevelopmentBuild = kilua_build_mode == "development"
+private fun importMetaEnvMode(): JsString? = js("import.meta.env.MODE")
+
+val isDevelopmentBuild = isDom && importMetaEnvMode()?.toString() == "development"

@@ -1,4 +1,4 @@
-FROM gradle:9.5.1-jdk25 AS build
+FROM gradle:9.7.0-jdk25 AS build
 
 RUN apt-get update && apt-get -y install libatomic1
 

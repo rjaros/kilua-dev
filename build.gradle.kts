@@ -58,18 +58,18 @@ kotlin {
     }
     applyDefaultHierarchyTemplate()
     sourceSets {
-        val commonMain by getting {
+        getByName("commonMain") {
             dependencies {
             }
         }
-        val jvmMain by getting {
+        getByName("jvmMain") {
             dependencies {
                 implementation(libs.kilua.ssr.server)
                 implementation(libs.ktor.server.cio)
                 implementation(libs.ktor.server.compression)
             }
         }
-        val webMain by getting {
+        getByName("webMain") {
             dependencies {
                 implementation(npm("daisyui", libs.versions.daisyui.get()))
                 implementation(npm("@tailwindcss/typography", libs.versions.tailwindcss.typography.get()))

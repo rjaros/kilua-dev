@@ -4,7 +4,7 @@ The sources for the Kilua website published at [https://kilua.dev](https://kilua
 
 # Building and running
 
-To build the application, you need to have JDK 21 or later installed.
+To build the application, you need to have JDK 25 or later installed.
 
 The following tasks are available:
 

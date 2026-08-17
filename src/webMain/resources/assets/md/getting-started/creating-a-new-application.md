@@ -10,9 +10,9 @@ The template project uses Gradle version catalog. All plugins and dependencies a
 
 ```toml
 [versions]
-kilua = "0.0.36"
-kotlin = "2.4.0"
-compose = "1.12.0-alpha01"
+kilua = "0.0.36-RC"
+kotlin = "2.4.20-RC"
+compose = "1.12.0-rc01"
 
 [libraries]
 kilua = { module = "dev.kilua:kilua", version.ref = "kilua" }
@@ -85,7 +85,7 @@ kotlin {
         }
     }
     sourceSets {
-        val commonMain by getting {
+        getByName("commonMain") {
             dependencies {
                 implementation(libs.kilua)
             }
