@@ -42,7 +42,7 @@ Compiling your code to Kotlin/Wasm makes your application up to 50% faster. On t
 
 #### **Type-safe fullstack**
 
-A companion [Kilua RPC](https://github.com/rjaros/kilua-rpc) library implements type-safe fullstack support for a bunch of popular server side frameworks - [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io) and [Micronaut](https://micronaut.io). It allows you to easily build maintainable applications with shared code for data model and business logic. Kilua provides built-in fullstack components - Tabulator, Select and Typeahead, allowing easy access to remote data sources.
+A companion [Kilua RPC](https://github.com/rjaros/kilua-rpc) library implements type-safe fullstack support for a bunch of popular server side frameworks - [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io), [Micronaut](https://micronaut.io) and [Quarkus](https://quarkus.is). It allows you to easily build maintainable applications with shared code for data model and business logic. Kilua provides built-in fullstack components - Tabulator, Select and Typeahead, allowing easy access to remote data sources.
 
 There is also support for type-safe websocket connections and SSE (server-sent events), based on [Kotlin coroutines channels](https://kotlinlang.org/docs/reference/coroutines/channels.html).
 
