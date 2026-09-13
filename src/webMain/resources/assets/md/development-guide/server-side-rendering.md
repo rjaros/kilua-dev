@@ -12,7 +12,7 @@ concept in modern web development that enhances user experience and boosts SEO p
 - Automatically extracting CSS styles from JS bundle and injecting them into the HTML document before sending to the
   browser.
 - Serialization of the application state from the server to the client side.
-- Ready to use modules for Ktor, Spring Boot, Micronaut, Javalin, Jooby and Vert.x servers.
+- Ready to use modules for Ktor, Spring Boot, Micronaut, Quarkus, Javalin, Jooby and Vert.x servers.
 
 ### Current limitations
 
@@ -54,7 +54,7 @@ environment. The Kilua application running with SSR consist of three main parts:
 `sendAndAwaitCompletion()` method when sending inputs to the `ViewModel`.
 
 2. The JVM server-side application - a simple JVM module for one of the supported frameworks (Ktor, Spring Boot,
-   Micronaut, Javalin, Jooby or Vert.x). The server module is responsible for handling incoming HTTP requests and
+   Micronaut, Quarkus, Javalin, Jooby or Vert.x). The server module is responsible for handling incoming HTTP requests and
    preparing HTTP responses with correct HTML code. For every request, it communicates with the server-side Kilua
    application running in Node.js to get the rendered HTML document. It then combines it with the given HTML template by
    adding appropriate meta headers and inlining all used CSS stylesheets. The module is also responsible for caching SSR

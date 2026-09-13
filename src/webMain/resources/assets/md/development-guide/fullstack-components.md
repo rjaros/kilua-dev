@@ -1,6 +1,6 @@
 # Fullstack components
 
-This section focuses on developing fullstack applications with [Kilua RPC](https://github.com/rjaros/kilua-rpc) companion library for [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io) and [Micronaut](https://micronaut.io) server side web frameworks. There is a comprehensive [Kilua RPC guide](https://kilua.gitbook.io/kilua-rpc-guide) available, which contains all the information about the library and its usage.
+This section focuses on developing fullstack applications with [Kilua RPC](https://github.com/rjaros/kilua-rpc) companion library for [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io), [Micronaut](https://micronaut.io) and [Quarkus](https://quarkus.is) server side web frameworks. There is a comprehensive [Kilua RPC guide](https://kilua.gitbook.io/kilua-rpc-guide) available, which contains all the information about the library and its usage.
 
 This chapter focuses on fullstack components provided by the Kilua framework, which can be used to easily access remote data sources.
 

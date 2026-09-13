@@ -49,6 +49,7 @@ This is the current list of available modules.
 | kilua-ssr-server-jooby | SSR support module for Jooby.  |                 |
 | kilua-ssr-server-ktor | SSR support module for Ktor. |                 |
 | kilua-ssr-server-micronaut | SSR support module for Micronaut. |                 |
+| kilua-ssr-server-quarkus | SSR support module for Quarkus. |                 |
 | kilua-ssr-server-spring-boot | SSR support module for Spring Boot. |                 |
 | kilua-ssr-server-vertx | SSR support module for Vert.x. |                 |
 | kilua-svg | SVG rendering support. |                 |

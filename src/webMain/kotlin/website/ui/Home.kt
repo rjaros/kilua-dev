@@ -49,7 +49,7 @@ fun IComponent.home() {
                         className = "bg-primary hover:bg-secondary text-white font-semibold px-4 py-2 rounded-full inline-flex items-center gap-x-2"
                     )
                     p {
-                        +"Current version: 0.0.36-RC"
+                        +"Current version: 0.0.36"
                     }
                 }
             }
@@ -112,7 +112,7 @@ fun IComponent.home() {
                         "Kilua RPC",
                         className = "font-bold text-primary hover:text-secondary"
                     )
-                    +" library supporting Ktor, Spring Boot, Micronaut, Javalin, Jooby and Vert.x servers."
+                    +" library supporting Ktor, Spring Boot, Micronaut, Quarkus, Javalin, Jooby and Vert.x servers."
                 }
                 li {
                     +"Translate your application to other languages with "
